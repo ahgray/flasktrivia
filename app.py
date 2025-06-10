@@ -102,6 +102,7 @@ def start_game():
     session['score'] = 0
     session['answers'] = []
     session['start_time'] = datetime.now().isoformat()
+    session['total_questions'] = len(selected_questions)  # Store this separately for safety
     session.modified = True
     
     return jsonify({
@@ -114,8 +115,13 @@ def start_game():
 @app.route('/api/question')
 def get_question():
     """Get the current question."""
-    if 'questions' not in session or session['current_index'] >= len(session['questions']):
+    if 'questions' not in session or 'total_questions' not in session:
         return jsonify({'error': 'No active game'}), 400
+    
+    # Use stored total_questions for consistency
+    total_questions = session['total_questions']
+    if session['current_index'] >= total_questions:
+        return jsonify({'error': 'No more questions'}), 400
     
     question = session['questions'][session['current_index']]
     
@@ -137,7 +143,7 @@ def get_question():
         'question': question['question'],
         'options': question['options'],
         'questionNumber': session['current_index'] + 1,
-        'totalQuestions': len(session['questions']),
+        'totalQuestions': total_questions,
         'category': question.get('category', 'General'),
         'subcategory': question.get('subcategory', ''),
         'difficulty': question.get('difficulty', 'medium'),
@@ -193,23 +199,28 @@ def submit_answer():
     session['current_index'] += 1
     session.modified = True
     
+    # Use the separately stored total_questions for reliability
+    total_questions = session.get('total_questions', len(session.get('questions', [])))
+    is_last = session['current_index'] >= total_questions
+    
     return jsonify({
         'correct': is_correct,
         'correctAnswer': current_question['options'][current_question['correct']],
         'explanation': current_question.get('explanation', 'No additional information available.'),
-        'isLastQuestion': session['current_index'] >= len(session['questions'])
+        'isLastQuestion': is_last
     })
 
 @app.route('/api/results')
 def get_results():
     """Get game results."""
-    if 'questions' not in session or 'answers' not in session:
+    if 'questions' not in session or 'answers' not in session or 'total_questions' not in session:
         return jsonify({'error': 'No completed game'}), 400
     
+    total_questions = session['total_questions']
     return jsonify({
         'score': session['score'],
-        'totalQuestions': len(session['questions']),
-        'percentage': round(session['score'] / len(session['questions']) * 100, 1),
+        'totalQuestions': total_questions,
+        'percentage': round(session['score'] / total_questions * 100, 1),
         'answers': session['answers'],
         'questions': session['questions']
     })
