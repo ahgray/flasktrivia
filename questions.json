@@ -1,0 +1,2850 @@
+[
+    {
+        "id": "transport_innovation_001",
+        "category": "stem",
+        "subcategory": "Transportation Innovation",
+        "difficulty": "medium",
+        "question": "What was the first commercially successful electric car company in the 21st century?",
+        "options": [
+            "Tesla",
+            "Nissan",
+            "Toyota",
+            "General Motors"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Tesla revolutionized the electric vehicle market with the Roadster in 2008, proving electric cars could be desirable.",
+        "funFact": "Tesla's first Roadster could go from 0-60 mph in 3.7 seconds, faster than most sports cars of its time!"
+    },
+    {
+        "id": "energy_climate_policy_001",
+        "category": "stem",
+        "subcategory": "Energy & Climate Policy",
+        "difficulty": "hard",
+        "question": "What international agreement succeeded the Kyoto Protocol in addressing climate change?",
+        "options": [
+            "Paris Agreement",
+            "Montreal Protocol",
+            "Copenhagen Accord",
+            "Doha Amendment"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Paris Agreement, adopted in 2015, replaced the Kyoto Protocol as the main international framework for climate action.",
+        "funFact": "The Paris Agreement aims to limit global warming to well below 2°C above pre-industrial levels!"
+    },
+    {
+        "id": "renewable_energy_policies_001",
+        "category": "stem",
+        "subcategory": "Renewable Energy Policies",
+        "difficulty": "medium",
+        "question": "What policy mechanism provides guaranteed payments for renewable energy producers?",
+        "options": [
+            "Feed-in Tariffs",
+            "Carbon Credits",
+            "Green Bonds",
+            "Renewable Certificates"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Feed-in tariffs guarantee long-term contracts and fixed pricing for renewable energy producers.",
+        "funFact": "Germany's feed-in tariff program helped make it a world leader in solar energy adoption!"
+    },
+    {
+        "id": "fossil_fuel_regulations_001",
+        "category": "stem",
+        "subcategory": "Fossil Fuel Regulations",
+        "difficulty": "medium",
+        "question": "What gas emission is primarily targeted by vehicle emission standards?",
+        "options": [
+            "Nitrogen Oxides (NOx)",
+            "Methane",
+            "Sulfur Dioxide",
+            "Ammonia"
+        ],
+        "correctAnswer": 0,
+        "explanation": "NOx emissions from vehicles contribute to smog and acid rain, making them a primary target of emission standards.",
+        "funFact": "Modern cars emit 95% fewer pollutants than cars from the 1970s thanks to emission regulations!"
+    },
+    {
+        "id": "carbon_pricing_001",
+        "category": "stem",
+        "subcategory": "Carbon Pricing",
+        "difficulty": "hard",
+        "question": "What is the largest carbon trading system in the world?",
+        "options": [
+            "EU Emissions Trading System",
+            "California Cap-and-Trade",
+            "Regional Greenhouse Gas Initiative",
+            "China National ETS"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The EU ETS covers about 40% of the EU's greenhouse gas emissions across 27 countries.",
+        "funFact": "The EU ETS was the world's first major carbon market, launching in 2005!"
+    },
+    {
+        "id": "energy_independence_001",
+        "category": "stem",
+        "subcategory": "Energy Independence",
+        "difficulty": "medium",
+        "question": "Which country achieved energy independence primarily through hydraulic fracturing (fracking)?",
+        "options": [
+            "United States",
+            "Canada",
+            "Norway",
+            "Russia"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The US shale revolution through fracking made it a net energy exporter for the first time in decades.",
+        "funFact": "The US went from importing 60% of its oil in 2005 to becoming a net exporter by 2019!"
+    },
+    {
+        "id": "grid_modernization_001",
+        "category": "stem",
+        "subcategory": "Grid Modernization",
+        "difficulty": "hard",
+        "question": "What technology enables two-way communication in smart grids?",
+        "options": [
+            "Advanced Metering Infrastructure",
+            "Power Line Carriers",
+            "Wireless Mesh Networks",
+            "Fiber Optic Cables"
+        ],
+        "correctAnswer": 0,
+        "explanation": "AMI allows utilities to communicate with smart meters and manage energy distribution more efficiently.",
+        "funFact": "Smart grids can automatically reroute power during outages, potentially reducing blackout duration by 50%!"
+    },
+    {
+        "id": "energy_efficiency_programs_001",
+        "category": "stem",
+        "subcategory": "Energy Efficiency Programs",
+        "difficulty": "medium",
+        "question": "What building certification system is most widely used for energy efficiency?",
+        "options": [
+            "LEED",
+            "BREEAM",
+            "Energy Star",
+            "Passive House"
+        ],
+        "correctAnswer": 0,
+        "explanation": "LEED (Leadership in Energy and Environmental Design) is the most widely used green building rating system globally.",
+        "funFact": "LEED-certified buildings use 25% less energy and 11% less water than conventional buildings!"
+    },
+    {
+        "id": "climate_agreements_001",
+        "category": "stem",
+        "subcategory": "Climate Agreements",
+        "difficulty": "hard",
+        "question": "What principle from the Paris Agreement allows countries to set their own emission reduction targets?",
+        "options": [
+            "Nationally Determined Contributions",
+            "Common But Differentiated Responsibilities",
+            "Technology Transfer Mechanism",
+            "Green Climate Fund"
+        ],
+        "correctAnswer": 0,
+        "explanation": "NDCs allow each country to determine its own contribution to global climate action based on national circumstances.",
+        "funFact": "Countries must update their NDCs every five years, making them progressively more ambitious!"
+    },
+    {
+        "id": "environmental_regulations_001",
+        "category": "stem",
+        "subcategory": "Environmental Regulations",
+        "difficulty": "medium",
+        "question": "What US law established the Environmental Protection Agency?",
+        "options": [
+            "National Environmental Policy Act",
+            "Clean Air Act",
+            "Clean Water Act",
+            "Toxic Substances Control Act"
+        ],
+        "correctAnswer": 0,
+        "explanation": "NEPA, signed in 1970, created the EPA and established environmental impact assessments for federal projects.",
+        "funFact": "The first Earth Day in 1970 led to the creation of the EPA and major environmental laws within two years!"
+    },
+    {
+        "id": "energy_innovation_001",
+        "category": "stem",
+        "subcategory": "Energy Innovation",
+        "difficulty": "hard",
+        "question": "What breakthrough technology promises to provide unlimited clean energy through nuclear fusion?",
+        "options": [
+            "Tokamak Reactors",
+            "Thorium Reactors",
+            "Molten Salt Reactors",
+            "Fast Breeder Reactors"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Tokamak reactors use magnetic confinement to achieve the conditions necessary for nuclear fusion.",
+        "funFact": "The ITER project in France aims to produce 500 MW of fusion power using only 50 MW of input power!"
+    },
+    {
+        "id": "nuclear_energy_policy_001",
+        "category": "stem",
+        "subcategory": "Nuclear Energy Policy",
+        "difficulty": "medium",
+        "question": "What international organization oversees nuclear safety and non-proliferation?",
+        "options": [
+            "International Atomic Energy Agency",
+            "Nuclear Regulatory Commission",
+            "World Nuclear Association",
+            "International Energy Agency"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The IAEA promotes peaceful use of nuclear energy while preventing proliferation of nuclear weapons.",
+        "funFact": "The IAEA conducts over 2,000 inspections annually at nuclear facilities worldwide!"
+    },
+    {
+        "id": "oil_gas_industry_001",
+        "category": "stem",
+        "subcategory": "Oil & Gas Industry",
+        "difficulty": "medium",
+        "question": "What organization controls global oil prices by managing production quotas?",
+        "options": [
+            "OPEC",
+            "IEA",
+            "EIA",
+            "API"
+        ],
+        "correctAnswer": 0,
+        "explanation": "OPEC (Organization of Petroleum Exporting Countries) coordinates oil production among member nations to influence prices.",
+        "funFact": "OPEC countries control about 80% of the world's proven oil reserves!"
+    },
+    {
+        "id": "solar_energy_development_001",
+        "category": "stem",
+        "subcategory": "Solar Energy Development",
+        "difficulty": "easy",
+        "question": "What type of solar panel is most commonly used in residential installations?",
+        "options": [
+            "Silicon Photovoltaic",
+            "Thin-Film",
+            "Concentrated Solar Power",
+            "Organic Photovoltaic"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Silicon PV panels are the most efficient and cost-effective for residential use.",
+        "funFact": "Solar panel efficiency has doubled since 1990, while costs have dropped by over 90%!"
+    },
+    {
+        "id": "wind_energy_projects_001",
+        "category": "stem",
+        "subcategory": "Wind Energy Projects",
+        "difficulty": "medium",
+        "question": "What is the world's largest offshore wind farm?",
+        "options": [
+            "Hornsea One",
+            "Gwynt y Môr",
+            "London Array",
+            "Thanet"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Hornsea One in the UK has a capacity of 1.2 GW and can power over one million homes.",
+        "funFact": "Offshore winds are typically 50% stronger than onshore winds, making them highly efficient for power generation!"
+    },
+    {
+        "id": "energy_storage_solutions_001",
+        "category": "stem",
+        "subcategory": "Energy Storage Solutions",
+        "difficulty": "hard",
+        "question": "What type of battery technology is most commonly used in grid-scale energy storage?",
+        "options": [
+            "Lithium-ion",
+            "Lead-acid",
+            "Flow batteries",
+            "Sodium-ion"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Lithium-ion batteries offer the best combination of efficiency, lifespan, and energy density for grid storage.",
+        "funFact": "The world's largest battery storage facility in California can power 250,000 homes for four hours!"
+    },
+    {
+        "id": "electric_vehicle_infrastructure_001",
+        "category": "stem",
+        "subcategory": "Electric Vehicle Infrastructure",
+        "difficulty": "medium",
+        "question": "What is the fastest DC charging standard for electric vehicles?",
+        "options": [
+            "CCS Combo",
+            "CHAdeMO",
+            "Tesla Supercharger",
+            "Type 2"
+        ],
+        "correctAnswer": 0,
+        "explanation": "CCS (Combined Charging System) supports the highest charging speeds and is becoming the global standard.",
+        "funFact": "Ultra-fast CCS chargers can add 200 miles of range to an EV in just 10 minutes!"
+    },
+    {
+        "id": "green_building_standards_001",
+        "category": "stem",
+        "subcategory": "Green Building Standards",
+        "difficulty": "medium",
+        "question": "What passive building standard originates from Germany and focuses on extreme energy efficiency?",
+        "options": [
+            "Passivhaus",
+            "BREEAM",
+            "LEED",
+            "Green Star"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Passivhaus (Passive House) standard requires buildings to use 90% less energy than conventional buildings.",
+        "funFact": "Passive Houses are so well-insulated they can be heated by the warmth from appliances and occupants!"
+    },
+    {
+        "id": "energy_conservation_001",
+        "category": "stem",
+        "subcategory": "Energy Conservation",
+        "difficulty": "easy",
+        "question": "What simple action can reduce home energy consumption by up to 10%?",
+        "options": [
+            "Adjusting thermostat by 7-10 degrees",
+            "Using LED bulbs",
+            "Unplugging electronics",
+            "Weatherstripping"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Adjusting your thermostat when you're away can significantly reduce heating and cooling costs.",
+        "funFact": "A programmable thermostat can save the average household $180 per year on energy bills!"
+    },
+    {
+        "id": "climate_adaptation_plans_001",
+        "category": "stem",
+        "subcategory": "Climate Adaptation Plans",
+        "difficulty": "hard",
+        "question": "What type of infrastructure helps coastal cities adapt to rising sea levels?",
+        "options": [
+            "Sea walls and flood barriers",
+            "Underground tunnels",
+            "Elevated highways",
+            "Green roofs"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Coastal protection infrastructure is essential for adapting to sea level rise and storm surge.",
+        "funFact": "The Netherlands' Delta Works is considered one of the Seven Wonders of the Modern World for flood protection!"
+    },
+    {
+        "id": "international_climate_policy_001",
+        "category": "stem",
+        "subcategory": "International Climate Policy",
+        "difficulty": "hard",
+        "question": "What mechanism allows developed countries to invest in emission reduction projects in developing countries?",
+        "options": [
+            "Clean Development Mechanism",
+            "Green Climate Fund",
+            "Technology Transfer",
+            "Carbon Border Adjustment"
+        ],
+        "correctAnswer": 0,
+        "explanation": "CDM enables developed countries to earn emission reduction credits by funding clean projects in developing nations.",
+        "funFact": "The CDM has generated over 2 billion carbon credits since 2006!"
+    },
+    {
+        "id": "energy_market_trends_001",
+        "category": "stem",
+        "subcategory": "Energy Market Trends",
+        "difficulty": "medium",
+        "question": "What energy source became the cheapest form of electricity in most parts of the world by 2020?",
+        "options": [
+            "Solar photovoltaic",
+            "Wind",
+            "Natural gas",
+            "Coal"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Solar PV costs fell dramatically, making it the lowest-cost electricity source in many regions.",
+        "funFact": "Solar electricity is now 85% cheaper than it was in 2010!"
+    },
+    {
+        "id": "population_demographics_001",
+        "category": "history",
+        "subcategory": "Population & Demographics",
+        "difficulty": "easy",
+        "question": "What is the approximate current world population?",
+        "options": [
+            "8 billion",
+            "7 billion",
+            "9 billion",
+            "6 billion"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The world population reached 8 billion in late 2022 and continues to grow.",
+        "funFact": "It took until 1804 for the world to reach 1 billion people, but only 12 years to go from 7 to 8 billion!"
+    },
+    {
+        "id": "census_data_001",
+        "category": "history",
+        "subcategory": "Census Data",
+        "difficulty": "medium",
+        "question": "How often does the United States conduct its official census?",
+        "options": [
+            "Every 10 years",
+            "Every 5 years",
+            "Every 7 years",
+            "Every 15 years"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The US Constitution mandates a census every 10 years to determine congressional representation.",
+        "funFact": "The first US census in 1790 counted 3.9 million people and was conducted by US Marshals on horseback!"
+    },
+    {
+        "id": "migration_patterns_001",
+        "category": "history",
+        "subcategory": "Migration Patterns",
+        "difficulty": "hard",
+        "question": "What was the largest voluntary migration in human history?",
+        "options": [
+            "European migration to the Americas",
+            "Chinese diaspora",
+            "Indian diaspora",
+            "African diaspora"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Between 1492 and 1880, approximately 55 million Europeans migrated to the Americas.",
+        "funFact": "Ellis Island processed over 12 million immigrants between 1892 and 1954!"
+    },
+    {
+        "id": "aging_population_001",
+        "category": "history",
+        "subcategory": "Aging Population",
+        "difficulty": "medium",
+        "question": "Which country has the highest proportion of elderly citizens (65+) in the world?",
+        "options": [
+            "Japan",
+            "Italy",
+            "Germany",
+            "Finland"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Japan has the world's oldest population, with about 30% of citizens over 65.",
+        "funFact": "Japan has more people over 100 years old than any other country - over 80,000 centenarians!"
+    },
+    {
+        "id": "birth_rate_trends_001",
+        "category": "history",
+        "subcategory": "Birth Rate Trends",
+        "difficulty": "medium",
+        "question": "What is the replacement fertility rate needed to maintain a stable population?",
+        "options": [
+            "2.1 children per woman",
+            "2.0 children per woman",
+            "2.5 children per woman",
+            "1.8 children per woman"
+        ],
+        "correctAnswer": 0,
+        "explanation": "A fertility rate of 2.1 children per woman maintains population stability, accounting for mortality.",
+        "funFact": "South Korea has the world's lowest fertility rate at just 0.84 children per woman!"
+    },
+    {
+        "id": "population_growth_001",
+        "category": "history",
+        "subcategory": "Population Growth",
+        "difficulty": "easy",
+        "question": "Which continent has the highest population growth rate?",
+        "options": [
+            "Africa",
+            "Asia",
+            "South America",
+            "North America"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Africa has the highest population growth rate, with some countries doubling their population every 20 years.",
+        "funFact": "Nigeria is projected to become the world's third most populous country by 2050!"
+    },
+    {
+        "id": "urbanization_001",
+        "category": "history",
+        "subcategory": "Urbanization",
+        "difficulty": "medium",
+        "question": "What percentage of the world's population lives in urban areas today?",
+        "options": [
+            "56%",
+            "45%",
+            "67%",
+            "72%"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Over half the world's population now lives in cities, marking a historic shift from rural living.",
+        "funFact": "By 2050, 68% of the world's population is expected to live in urban areas!"
+    },
+    {
+        "id": "rural_development_001",
+        "category": "history",
+        "subcategory": "Rural Development",
+        "difficulty": "hard",
+        "question": "What UN goal specifically addresses rural development and agriculture?",
+        "options": [
+            "SDG 2: Zero Hunger",
+            "SDG 1: No Poverty",
+            "SDG 6: Clean Water",
+            "SDG 15: Life on Land"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SDG 2 aims to end hunger, achieve food security, and promote sustainable agriculture.",
+        "funFact": "Despite urbanization, 80% of the world's poor still live in rural areas!"
+    },
+    {
+        "id": "demographic_shifts_001",
+        "category": "history",
+        "subcategory": "Demographic Shifts",
+        "difficulty": "medium",
+        "question": "What demographic trend is affecting most developed countries?",
+        "options": [
+            "Population aging",
+            "Youth bulge",
+            "Rural exodus",
+            "Immigration boom"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Developed countries face aging populations due to low birth rates and increased life expectancy.",
+        "funFact": "By 2050, there will be twice as many people over 60 as children under 5 globally!"
+    },
+    {
+        "id": "workforce_changes_001",
+        "category": "history",
+        "subcategory": "Workforce Changes",
+        "difficulty": "medium",
+        "question": "What generation is currently the largest segment of the workforce?",
+        "options": [
+            "Millennials",
+            "Generation X",
+            "Baby Boomers",
+            "Generation Z"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Millennials (born 1981-1996) became the largest generation in the workforce around 2016.",
+        "funFact": "By 2025, Millennials and Gen Z will make up 75% of the global workforce!"
+    },
+    {
+        "id": "housing_demands_001",
+        "category": "history",
+        "subcategory": "Housing Demands",
+        "difficulty": "hard",
+        "question": "What demographic factor most influences housing demand in developed countries?",
+        "options": [
+            "Household formation rates",
+            "Immigration",
+            "Income levels",
+            "Interest rates"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The rate at which new households form drives underlying housing demand.",
+        "funFact": "The average household size in the US has declined from 3.3 people in 1960 to 2.5 today!"
+    },
+    {
+        "id": "healthcare_needs_001",
+        "category": "history",
+        "subcategory": "Healthcare Needs",
+        "difficulty": "medium",
+        "question": "What chronic disease is most associated with aging populations?",
+        "options": [
+            "Dementia",
+            "Heart disease",
+            "Diabetes",
+            "Cancer"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Dementia, including Alzheimer's disease, primarily affects older adults and increases with age.",
+        "funFact": "The number of people with dementia is expected to triple by 2050 due to population aging!"
+    },
+    {
+        "id": "educational_requirements_001",
+        "category": "history",
+        "subcategory": "Educational Requirements",
+        "difficulty": "medium",
+        "question": "What percentage of jobs in developed economies require post-secondary education?",
+        "options": [
+            "65%",
+            "45%",
+            "55%",
+            "75%"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The majority of jobs in modern economies require education beyond high school.",
+        "funFact": "Jobs requiring a college degree have grown 3 times faster than those requiring only high school!"
+    },
+    {
+        "id": "social_services_001",
+        "category": "history",
+        "subcategory": "Social Services",
+        "difficulty": "hard",
+        "question": "What social insurance program faces the greatest fiscal pressure from demographic changes?",
+        "options": [
+            "Pension systems",
+            "Healthcare",
+            "Unemployment insurance",
+            "Disability benefits"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Pension systems face pressure as the ratio of workers to retirees declines.",
+        "funFact": "In 1950, there were 16 workers for every Social Security beneficiary; today there are only 3!"
+    },
+    {
+        "id": "economic_impact_001",
+        "category": "history",
+        "subcategory": "Economic Impact",
+        "difficulty": "medium",
+        "question": "What economic phenomenon often results from rapidly declining birth rates?",
+        "options": [
+            "Labor shortage",
+            "Inflation",
+            "Currency devaluation",
+            "Trade deficit"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Declining birth rates lead to fewer workers, creating labor shortages in many industries.",
+        "funFact": "Germany relies on immigration to fill 400,000 job vacancies annually due to its low birth rate!"
+    },
+    {
+        "id": "cultural_changes_001",
+        "category": "history",
+        "subcategory": "Cultural Changes",
+        "difficulty": "medium",
+        "question": "What cultural shift is most associated with urbanization?",
+        "options": [
+            "Nuclear family dominance",
+            "Extended family systems",
+            "Rural traditions",
+            "Agricultural practices"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Urban living typically leads to smaller, nuclear family structures rather than extended families.",
+        "funFact": "In cities, people are 3 times more likely to live alone than in rural areas!"
+    },
+    {
+        "id": "family_structures_001",
+        "category": "history",
+        "subcategory": "Family Structures",
+        "difficulty": "medium",
+        "question": "What family arrangement has become most common in developed countries?",
+        "options": [
+            "Two-parent households",
+            "Single-parent households",
+            "Extended family households",
+            "Childless couples"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Despite changes, two-parent households remain the most common family structure.",
+        "funFact": "Single-parent households have tripled since 1960, now representing 25% of families with children!"
+    },
+    {
+        "id": "life_expectancy_001",
+        "category": "history",
+        "subcategory": "Life Expectancy",
+        "difficulty": "easy",
+        "question": "Which country has the highest life expectancy in the world?",
+        "options": [
+            "Japan",
+            "Switzerland",
+            "Singapore",
+            "Italy"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Japan has the highest life expectancy at birth, around 84 years.",
+        "funFact": "Life expectancy has more than doubled globally since 1900, from 31 to over 72 years!"
+    },
+    {
+        "id": "population_projections_001",
+        "category": "history",
+        "subcategory": "Population Projections",
+        "difficulty": "hard",
+        "question": "When is the world population expected to peak according to UN projections?",
+        "options": [
+            "2080s",
+            "2050s",
+            "2070s",
+            "2100"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The UN projects world population will peak around 10.4 billion in the 2080s before declining.",
+        "funFact": "After peaking, global population is projected to decline to 10.2 billion by 2100!"
+    },
+    {
+        "id": "regional_differences_001",
+        "category": "history",
+        "subcategory": "Regional Differences",
+        "difficulty": "medium",
+        "question": "Which region has the youngest median age in the world?",
+        "options": [
+            "Sub-Saharan Africa",
+            "South Asia",
+            "Latin America",
+            "Middle East"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Sub-Saharan Africa has a median age of about 18 years, making it the youngest region.",
+        "funFact": "Niger has the world's youngest population with a median age of just 15 years!"
+    },
+    {
+        "id": "global_demographics_001",
+        "category": "history",
+        "subcategory": "Global Demographics",
+        "difficulty": "medium",
+        "question": "What is the most populous country in the world as of 2023?",
+        "options": [
+            "India",
+            "China",
+            "United States",
+            "Indonesia"
+        ],
+        "correctAnswer": 0,
+        "explanation": "India surpassed China as the world's most populous country in 2023.",
+        "funFact": "India and China each have over 1.4 billion people - more than the entire population of Europe and North America combined!"
+    },
+    {
+        "id": "international_conflicts_001",
+        "category": "history",
+        "subcategory": "International Conflicts",
+        "difficulty": "medium",
+        "question": "What organization is responsible for maintaining international peace and security?",
+        "options": [
+            "United Nations Security Council",
+            "International Court of Justice",
+            "NATO",
+            "G7"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The UN Security Council has primary responsibility for maintaining international peace and security.",
+        "funFact": "The Security Council can authorize military action and has only done so 15 times since 1945!"
+    },
+    {
+        "id": "armed_conflicts_001",
+        "category": "history",
+        "subcategory": "Armed Conflicts",
+        "difficulty": "hard",
+        "question": "What was the longest war in US history?",
+        "options": [
+            "War in Afghanistan",
+            "Vietnam War",
+            "Iraq War",
+            "Korean War"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The War in Afghanistan lasted from 2001 to 2021, making it the longest war in US history.",
+        "funFact": "The Afghanistan War lasted longer than World War I, World War II, and the Korean War combined!"
+    },
+    {
+        "id": "civil_wars_001",
+        "category": "history",
+        "subcategory": "Civil Wars",
+        "difficulty": "medium",
+        "question": "Which country has been experiencing civil war since 2011?",
+        "options": [
+            "Syria",
+            "Libya",
+            "Yemen",
+            "Iraq"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Syrian Civil War began in 2011 during the Arab Spring and continues today.",
+        "funFact": "The Syrian conflict has displaced over 13 million people, making it the largest refugee crisis since WWII!"
+    },
+    {
+        "id": "territorial_disputes_001",
+        "category": "history",
+        "subcategory": "Territorial Disputes",
+        "difficulty": "hard",
+        "question": "What body of water is the subject of multiple territorial disputes in Asia?",
+        "options": [
+            "South China Sea",
+            "East China Sea",
+            "Sea of Japan",
+            "Yellow Sea"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The South China Sea involves territorial disputes between China, Philippines, Vietnam, and other nations.",
+        "funFact": "About $3 trillion in trade passes through the South China Sea annually!"
+    },
+    {
+        "id": "diplomatic_crises_001",
+        "category": "history",
+        "subcategory": "Diplomatic Crises",
+        "difficulty": "medium",
+        "question": "What event in 1962 brought the world closest to nuclear war?",
+        "options": [
+            "Cuban Missile Crisis",
+            "Berlin Crisis",
+            "Korean War",
+            "Bay of Pigs"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Cuban Missile Crisis brought the US and Soviet Union to the brink of nuclear war.",
+        "funFact": "During the crisis, a Soviet submarine captain almost launched a nuclear torpedo but was stopped by one dissenting officer!"
+    },
+    {
+        "id": "peace_negotiations_001",
+        "category": "history",
+        "subcategory": "Peace Negotiations",
+        "difficulty": "hard",
+        "question": "What agreement ended the Troubles in Northern Ireland?",
+        "options": [
+            "Good Friday Agreement",
+            "Belfast Accord",
+            "Anglo-Irish Agreement",
+            "Sunningdale Agreement"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Good Friday Agreement (Belfast Agreement) in 1998 largely ended the conflict in Northern Ireland.",
+        "funFact": "The Good Friday Agreement was approved by 94% of voters in the Republic of Ireland and 71% in Northern Ireland!"
+    },
+    {
+        "id": "humanitarian_crises_001",
+        "category": "history",
+        "subcategory": "Humanitarian Crises",
+        "difficulty": "medium",
+        "question": "Which organization coordinates international humanitarian response to emergencies?",
+        "options": [
+            "UN Office for the Coordination of Humanitarian Affairs",
+            "World Food Programme",
+            "UNICEF",
+            "Red Cross"
+        ],
+        "correctAnswer": 0,
+        "explanation": "OCHA coordinates humanitarian action and ensures coherent response to emergencies.",
+        "funFact": "Humanitarian aid reaches over 100 million people annually in crisis situations worldwide!"
+    },
+    {
+        "id": "refugee_situations_001",
+        "category": "history",
+        "subcategory": "Refugee Situations",
+        "difficulty": "medium",
+        "question": "Which country hosts the largest number of refugees in the world?",
+        "options": [
+            "Turkey",
+            "Pakistan",
+            "Uganda",
+            "Germany"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Turkey hosts about 3.7 million refugees, mostly from Syria.",
+        "funFact": "There are over 20 different CPU socket types currently in use across different manufacturers!"
+    },
+    {
+        "id": "emerging_hardware_001",
+        "category": "stem",
+        "subcategory": "Emerging Hardware",
+        "difficulty": "hard",
+        "question": "What emerging memory technology promises to replace both RAM and storage?",
+        "options": [
+            "3D XPoint/Optane",
+            "MRAM",
+            "ReRAM",
+            "FRAM"
+        ],
+        "correctAnswer": 0,
+        "explanation": "3D XPoint technology offers the speed of RAM with the persistence of storage media.",
+        "funFact": "Intel discontinued Optane for consumers, but the technology lives on in enterprise applications!"
+    },
+    {
+        "id": "software_applications_001",
+        "category": "stem",
+        "subcategory": "Software & Applications",
+        "difficulty": "medium",
+        "question": "What type of software manages computer hardware and provides services for other programs?",
+        "options": [
+            "Operating System",
+            "Application Software",
+            "Firmware",
+            "Middleware"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Operating systems like Windows, macOS, and Linux manage hardware resources and provide a platform for applications.",
+        "funFact": "The first operating system was developed in the 1950s for the IBM 704 computer!"
+    },
+    {
+        "id": "operating_systems_001",
+        "category": "stem",
+        "subcategory": "Operating Systems",
+        "difficulty": "medium",
+        "question": "Which operating system kernel is Linux based on?",
+        "options": [
+            "Unix",
+            "Windows NT",
+            "DOS",
+            "OS/2"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Linux is a Unix-like operating system kernel first created by Linus Torvalds in 1991.",
+        "funFact": "Linux powers over 90% of the world's supercomputers and most web servers on the internet!"
+    },
+    {
+        "id": "productivity_software_001",
+        "category": "stem",
+        "subcategory": "Productivity Software",
+        "difficulty": "easy",
+        "question": "What is the most widely used office suite software?",
+        "options": [
+            "Microsoft Office",
+            "Google Workspace",
+            "LibreOffice",
+            "Apple iWork"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Microsoft Office dominates the office suite market with Word, Excel, and PowerPoint.",
+        "funFact": "Microsoft Office was first released in 1990 and now has over 1.2 billion users worldwide!"
+    },
+    {
+        "id": "creative_software_001",
+        "category": "stem",
+        "subcategory": "Creative Software",
+        "difficulty": "medium",
+        "question": "Which company makes Photoshop, the leading image editing software?",
+        "options": [
+            "Adobe",
+            "Corel",
+            "Canva",
+            "GIMP Foundation"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Adobe Photoshop has been the industry standard for image editing since its release in 1990.",
+        "funFact": "The term 'photoshopped' has become so common it's in the dictionary as a verb!"
+    },
+    {
+        "id": "security_software_001",
+        "category": "stem",
+        "subcategory": "Security Software",
+        "difficulty": "medium",
+        "question": "What type of software is designed to detect and remove malicious programs?",
+        "options": [
+            "Antivirus software",
+            "Firewall",
+            "VPN",
+            "Password manager"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Antivirus software scans files and programs to detect and remove viruses, malware, and other threats.",
+        "funFact": "The first computer virus was created in 1971, and the first antivirus software followed in 1987!"
+    },
+    {
+        "id": "database_software_001",
+        "category": "stem",
+        "subcategory": "Database Software",
+        "difficulty": "hard",
+        "question": "What does SQL stand for in database management?",
+        "options": [
+            "Structured Query Language",
+            "Sequential Query Language",
+            "Standard Query Language",
+            "System Query Language"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SQL is the standard language for managing and manipulating relational databases.",
+        "funFact": "SQL was developed at IBM in the 1970s and became an ISO standard in 1986!"
+    },
+    {
+        "id": "web_browsers_001",
+        "category": "stem",
+        "subcategory": "Web Browsers",
+        "difficulty": "easy",
+        "question": "Which web browser currently has the largest market share?",
+        "options": [
+            "Google Chrome",
+            "Safari",
+            "Firefox",
+            "Microsoft Edge"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Google Chrome holds over 60% of the global web browser market share.",
+        "funFact": "Chrome was released in 2008 and quickly became the most popular browser, overtaking Internet Explorer!"
+    },
+    {
+        "id": "mobile_apps_001",
+        "category": "stem",
+        "subcategory": "Mobile Apps",
+        "difficulty": "medium",
+        "question": "Which platform has the largest mobile app store?",
+        "options": [
+            "Google Play Store",
+            "Apple App Store",
+            "Amazon Appstore",
+            "Samsung Galaxy Store"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Google Play Store has over 3 million apps, making it the largest mobile app marketplace.",
+        "funFact": "Over 100 billion apps are downloaded annually from app stores worldwide!"
+    },
+    {
+        "id": "enterprise_software_001",
+        "category": "stem",
+        "subcategory": "Enterprise Software",
+        "difficulty": "hard",
+        "question": "What type of software helps businesses manage customer relationships?",
+        "options": [
+            "CRM (Customer Relationship Management)",
+            "ERP (Enterprise Resource Planning)",
+            "SCM (Supply Chain Management)",
+            "HRM (Human Resource Management)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "CRM software helps businesses track customer interactions, sales, and marketing efforts.",
+        "funFact": "The CRM software market is worth over $50 billion annually and growing rapidly!"
+    },
+    {
+        "id": "development_tools_001",
+        "category": "stem",
+        "subcategory": "Development Tools",
+        "difficulty": "medium",
+        "question": "What is an IDE in software development?",
+        "options": [
+            "Integrated Development Environment",
+            "Interactive Development Engine",
+            "Internal Development Extension",
+            "Independent Development Environment"
+        ],
+        "correctAnswer": 0,
+        "explanation": "An IDE provides comprehensive tools for software development including code editing, debugging, and testing.",
+        "funFact": "Popular IDEs like Visual Studio Code are used by millions of developers worldwide!"
+    },
+    {
+        "id": "system_utilities_001",
+        "category": "stem",
+        "subcategory": "System Utilities",
+        "difficulty": "medium",
+        "question": "What type of utility software is used to clean up unnecessary files on a computer?",
+        "options": [
+            "Disk cleanup",
+            "Registry cleaner",
+            "Defragmenter",
+            "System monitor"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Disk cleanup utilities remove temporary files, cache, and other unnecessary data to free up storage space.",
+        "funFact": "A typical computer can accumulate gigabytes of temporary files that can safely be deleted!"
+    },
+    {
+        "id": "media_players_001",
+        "category": "stem",
+        "subcategory": "Media Players",
+        "difficulty": "easy",
+        "question": "Which media player is most commonly used for playing video files?",
+        "options": [
+            "VLC Media Player",
+            "Windows Media Player",
+            "QuickTime",
+            "RealPlayer"
+        ],
+        "correctAnswer": 0,
+        "explanation": "VLC is popular because it can play almost any video or audio format without additional codecs.",
+        "funFact": "VLC has been downloaded over 3 billion times since its release in 2001!"
+    },
+    {
+        "id": "file_management_001",
+        "category": "stem",
+        "subcategory": "File Management",
+        "difficulty": "easy",
+        "question": "What is the default file manager in Windows operating systems?",
+        "options": [
+            "File Explorer",
+            "Finder",
+            "Nautilus",
+            "Dolphin"
+        ],
+        "correctAnswer": 0,
+        "explanation": "File Explorer (formerly Windows Explorer) is the built-in file management tool in Windows.",
+        "funFact": "File Explorer was first introduced in Windows 95 and has been continuously updated since!"
+    },
+    {
+        "id": "communication_software_001",
+        "category": "stem",
+        "subcategory": "Communication Software",
+        "difficulty": "medium",
+        "question": "What protocol do most email clients use to receive messages?",
+        "options": [
+            "IMAP or POP3",
+            "SMTP",
+            "HTTP",
+            "FTP"
+        ],
+        "correctAnswer": 0,
+        "explanation": "IMAP and POP3 are protocols for receiving email, while SMTP is used for sending email.",
+        "funFact": "IMAP allows you to access emails from multiple devices, while POP3 downloads emails to one device!"
+    },
+    {
+        "id": "educational_software_001",
+        "category": "stem",
+        "subcategory": "Educational Software",
+        "difficulty": "medium",
+        "question": "What type of educational software adapts to individual learning styles?",
+        "options": [
+            "Adaptive learning software",
+            "Simulation software",
+            "Reference software",
+            "Tutorial software"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Adaptive learning software adjusts content difficulty and presentation based on student performance.",
+        "funFact": "AI-powered adaptive learning can improve student outcomes by up to 30%!"
+    },
+    {
+        "id": "gaming_software_001",
+        "category": "stem",
+        "subcategory": "Gaming Software",
+        "difficulty": "medium",
+        "question": "What software platform is most popular for PC game distribution?",
+        "options": [
+            "Steam",
+            "Epic Games Store",
+            "Origin",
+            "Battle.net"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Steam dominates PC game distribution with over 120 million active users.",
+        "funFact": "Steam was launched by Valve in 2003 and now hosts over 50,000 games!"
+    },
+    {
+        "id": "open_source_software_001",
+        "category": "stem",
+        "subcategory": "Open Source Software",
+        "difficulty": "medium",
+        "question": "What does 'open source' mean in software development?",
+        "options": [
+            "Source code is freely available",
+            "Software is free to use",
+            "Software runs on any platform",
+            "Software has no bugs"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Open source means the source code is publicly available for anyone to view, modify, and distribute.",
+        "funFact": "Over 90% of companies use open source software in their technology stack!"
+    },
+    {
+        "id": "software_licensing_001",
+        "category": "stem",
+        "subcategory": "Software Licensing",
+        "difficulty": "hard",
+        "question": "What type of license allows software to be used commercially without restrictions?",
+        "options": [
+            "Permissive license",
+            "Copyleft license",
+            "Proprietary license",
+            "Shareware license"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Permissive licenses like MIT and BSD allow commercial use with minimal restrictions.",
+        "funFact": "The MIT License is one of the most popular open source licenses due to its simplicity!"
+    },
+    {
+        "id": "software_updates_001",
+        "category": "stem",
+        "subcategory": "Software Updates",
+        "difficulty": "easy",
+        "question": "What is the primary reason software companies release security updates?",
+        "options": [
+            "To fix vulnerabilities",
+            "To add new features",
+            "To improve performance",
+            "To change the interface"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Security updates patch vulnerabilities that could be exploited by malicious actors.",
+        "funFact": "Unpatched software is the leading cause of successful cyberattacks!"
+    },
+    {
+        "id": "software_integration_001",
+        "category": "stem",
+        "subcategory": "Software Integration",
+        "difficulty": "hard",
+        "question": "What does API stand for in software development?",
+        "options": [
+            "Application Programming Interface",
+            "Advanced Programming Interface",
+            "Automated Programming Interface",
+            "Application Process Interface"
+        ],
+        "correctAnswer": 0,
+        "explanation": "APIs define how different software components or systems can communicate with each other.",
+        "funFact": "APIs enable the interconnected digital world - most modern apps use dozens of APIs!"
+    },
+    {
+        "id": "cloud_software_001",
+        "category": "stem",
+        "subcategory": "Cloud Software",
+        "difficulty": "medium",
+        "question": "What does SaaS stand for in cloud computing?",
+        "options": [
+            "Software as a Service",
+            "System as a Service",
+            "Storage as a Service",
+            "Security as a Service"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SaaS delivers software applications over the internet, eliminating the need for local installation.",
+        "funFact": "The SaaS market is expected to reach $700 billion by 2030!"
+    },
+    {
+        "id": "internet_networking_001",
+        "category": "stem",
+        "subcategory": "Internet & Networking",
+        "difficulty": "medium",
+        "question": "What does WWW stand for?",
+        "options": [
+            "World Wide Web",
+            "Wide Web World",
+            "World Web Wide",
+            "Web World Wide"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The World Wide Web is the system of interlinked hypertext documents accessed via the Internet.",
+        "funFact": "The Web was invented by Tim Berners-Lee in 1989 and the first website went live in 1991!"
+    },
+    {
+        "id": "network_protocols_001",
+        "category": "stem",
+        "subcategory": "Network Protocols",
+        "difficulty": "hard",
+        "question": "What does HTTP stand for?",
+        "options": [
+            "HyperText Transfer Protocol",
+            "High Transfer Text Protocol",
+            "HyperText Transport Protocol",
+            "High Text Transfer Process"
+        ],
+        "correctAnswer": 0,
+        "explanation": "HTTP is the protocol used for transferring web pages and other data over the internet.",
+        "funFact": "The secure version, HTTPS, encrypts data using SSL/TLS to protect against eavesdropping."
+    },
+    {
+        "id": "internet_infrastructure_001",
+        "category": "stem",
+        "subcategory": "Internet Infrastructure",
+        "difficulty": "hard",
+        "question": "What are the high-speed data transmission lines that form the Internet's backbone?",
+        "options": [
+            "Fiber optic cables",
+            "Copper wires",
+            "Satellite links",
+            "Radio waves"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Fiber optic cables carry the majority of Internet traffic between countries and continents.",
+        "funFact": "Undersea fiber optic cables carry 99% of international data traffic!"
+    },
+    {
+        "id": "web_technologies_001",
+        "category": "stem",
+        "subcategory": "Web Technologies",
+        "difficulty": "medium",
+        "question": "What markup language is used to structure content on web pages?",
+        "options": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "XML"
+        ],
+        "correctAnswer": 0,
+        "explanation": "HTML (HyperText Markup Language) defines the structure and content of web pages.",
+        "funFact": "HTML was first developed in 1990 and the current version is HTML5!"
+    },
+    {
+        "id": "network_security_001",
+        "category": "stem",
+        "subcategory": "Network Security",
+        "difficulty": "medium",
+        "question": "What does a firewall primarily protect against?",
+        "options": [
+            "Unauthorized network access",
+            "Computer viruses",
+            "Hardware failures",
+            "Power surges"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Firewalls monitor and control incoming and outgoing network traffic based on security rules.",
+        "funFact": "The term 'firewall' comes from construction, where it refers to walls designed to prevent fire from spreading."
+    },
+    {
+        "id": "wireless_networks_001",
+        "category": "stem",
+        "subcategory": "Wireless Networks",
+        "difficulty": "easy",
+        "question": "What does Wi-Fi stand for?",
+        "options": [
+            "Wireless Fidelity",
+            "Wide Fidelity",
+            "Wireless Frequency",
+            "Web Fidelity"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Wi-Fi allows devices to connect to the internet wirelessly using radio waves.",
+        "funFact": "Wi-Fi was invented in 1997 and now there are over 4 billion Wi-Fi devices worldwide!"
+    },
+    {
+        "id": "broadband_internet_001",
+        "category": "stem",
+        "subcategory": "Broadband Internet",
+        "difficulty": "medium",
+        "question": "What is considered the minimum speed for broadband internet in the US?",
+        "options": [
+            "25 Mbps download",
+            "10 Mbps download",
+            "50 Mbps download",
+            "100 Mbps download"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The FCC defines broadband as 25 Mbps download and 3 Mbps upload speeds.",
+        "funFact": "The average global internet speed has increased 30% annually over the past decade!"
+    },
+    {
+        "id": "network_hardware_001",
+        "category": "stem",
+        "subcategory": "Network Hardware",
+        "difficulty": "medium",
+        "question": "What device connects multiple networks and routes data between them?",
+        "options": [
+            "Router",
+            "Switch",
+            "Hub",
+            "Modem"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Routers determine the best path for data to travel between different networks.",
+        "funFact": "Home routers typically combine router, switch, and wireless access point functions!"
+    },
+    {
+        "id": "cloud_computing_001",
+        "category": "stem",
+        "subcategory": "Cloud Computing",
+        "difficulty": "medium",
+        "question": "Which company provides the largest cloud computing platform?",
+        "options": [
+            "Amazon Web Services",
+            "Microsoft Azure",
+            "Google Cloud",
+            "IBM Cloud"
+        ],
+        "correctAnswer": 0,
+        "explanation": "AWS holds about 32% of the global cloud infrastructure market.",
+        "funFact": "Cloud computing saves businesses an average of 15% on IT costs!"
+    },
+    {
+        "id": "content_delivery_networks_001",
+        "category": "stem",
+        "subcategory": "Content Delivery Networks",
+        "difficulty": "hard",
+        "question": "What is the primary purpose of a CDN?",
+        "options": [
+            "Reduce latency by caching content closer to users",
+            "Increase security",
+            "Reduce bandwidth costs",
+            "Improve SEO"
+        ],
+        "correctAnswer": 0,
+        "explanation": "CDNs store copies of content at multiple locations worldwide to reduce loading times.",
+        "funFact": "CDNs can reduce page load times by up to 50% for global audiences!"
+    },
+    {
+        "id": "internet_of_things_001",
+        "category": "stem",
+        "subcategory": "Internet of Things",
+        "difficulty": "medium",
+        "question": "What does IoT stand for?",
+        "options": [
+            "Internet of Things",
+            "Integration of Technology",
+            "Interface of Things",
+            "Internet of Technology"
+        ],
+        "correctAnswer": 0,
+        "explanation": "IoT refers to the network of physical devices connected to the internet that can collect and share data.",
+        "funFact": "There are expected to be over 75 billion IoT devices by 2030!"
+    },
+    {
+        "id": "network_administration_001",
+        "category": "stem",
+        "subcategory": "Network Administration",
+        "difficulty": "hard",
+        "question": "What protocol is used to assign IP addresses automatically?",
+        "options": [
+            "DHCP",
+            "DNS",
+            "FTP",
+            "SMTP"
+        ],
+        "correctAnswer": 0,
+        "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses to devices on a network.",
+        "funFact": "Without DHCP, every device would need its IP address manually configured!"
+    },
+    {
+        "id": "domain_names_001",
+        "category": "stem",
+        "subcategory": "Domain Names",
+        "difficulty": "medium",
+        "question": "What does DNS stand for?",
+        "options": [
+            "Domain Name System",
+            "Digital Network Service",
+            "Domain Network System",
+            "Digital Name Service"
+        ],
+        "correctAnswer": 0,
+        "explanation": "DNS translates human-readable domain names into IP addresses that computers can understand.",
+        "funFact": "DNS handles over 4 trillion queries per day worldwide!"
+    },
+    {
+        "id": "web_hosting_001",
+        "category": "stem",
+        "subcategory": "Web Hosting",
+        "difficulty": "medium",
+        "question": "What type of hosting gives you complete control over a physical server?",
+        "options": [
+            "Dedicated hosting",
+            "Shared hosting",
+            "VPS hosting",
+            "Cloud hosting"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Dedicated hosting provides an entire physical server exclusively for one customer.",
+        "funFact": "Dedicated servers can cost hundreds of dollars per month but offer maximum performance!"
+    },
+    {
+        "id": "internet_standards_001",
+        "category": "stem",
+        "subcategory": "Internet Standards",
+        "difficulty": "hard",
+        "question": "Which organization develops internet standards?",
+        "options": [
+            "Internet Engineering Task Force (IETF)",
+            "World Wide Web Consortium (W3C)",
+            "Internet Corporation for Assigned Names and Numbers (ICANN)",
+            "Institute of Electrical and Electronics Engineers (IEEE)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The IETF develops and promotes voluntary internet standards and protocols.",
+        "funFact": "All major internet protocols like TCP/IP were developed through IETF standards!"
+    },
+    {
+        "id": "network_monitoring_001",
+        "category": "stem",
+        "subcategory": "Network Monitoring",
+        "difficulty": "hard",
+        "question": "What protocol is commonly used to monitor network devices?",
+        "options": [
+            "SNMP",
+            "HTTP",
+            "FTP",
+            "TELNET"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SNMP (Simple Network Management Protocol) allows network administrators to monitor and manage network devices.",
+        "funFact": "SNMP can monitor everything from router performance to printer toner levels!"
+    },
+    {
+        "id": "fiber_optic_networks_001",
+        "category": "stem",
+        "subcategory": "Fiber Optic Networks",
+        "difficulty": "medium",
+        "question": "What advantage do fiber optic cables have over copper cables?",
+        "options": [
+            "Much higher data transmission speeds",
+            "Lower cost",
+            "Easier installation",
+            "Better durability"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Fiber optic cables can transmit data at much higher speeds and over longer distances than copper cables.",
+        "funFact": "Fiber optic cables can transmit data at nearly the speed of light!"
+    },
+    {
+        "id": "satellite_internet_001",
+        "category": "stem",
+        "subcategory": "Satellite Internet",
+        "difficulty": "medium",
+        "question": "What is the main disadvantage of traditional satellite internet?",
+        "options": [
+            "High latency",
+            "Low bandwidth",
+            "High cost",
+            "Limited coverage"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Traditional satellite internet has high latency due to the long distance signals must travel to geostationary satellites.",
+        "funFact": "New low-Earth orbit satellites like Starlink reduce latency from 600ms to under 50ms!"
+    },
+    {
+        "id": "mobile_networks_001",
+        "category": "stem",
+        "subcategory": "Mobile Networks",
+        "difficulty": "easy",
+        "question": "What does 5G represent in mobile networking?",
+        "options": [
+            "Fifth generation",
+            "5 Gigabit",
+            "5 Gateway",
+            "Global network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "5G is the fifth generation of mobile network technology, offering faster speeds and lower latency.",
+        "funFact": "5G can be up to 100 times faster than 4G with speeds reaching 10 Gbps!"
+    },
+    {
+        "id": "network_troubleshooting_001",
+        "category": "stem",
+        "subcategory": "Network Troubleshooting",
+        "difficulty": "medium",
+        "question": "What command-line tool is commonly used to test network connectivity?",
+        "options": [
+            "ping",
+            "tracert",
+            "ipconfig",
+            "netstat"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The ping command sends packets to a destination and measures response time to test connectivity.",
+        "funFact": "Ping is named after the sonar sound submarines use to detect objects underwater!"
+    },
+    {
+        "id": "future_internet_technologies_001",
+        "category": "stem",
+        "subcategory": "Future Internet Technologies",
+        "difficulty": "hard",
+        "question": "What technology promises to create an unhackable internet?",
+        "options": [
+            "Quantum internet",
+            "Blockchain internet",
+            "AI internet",
+            "Satellite internet"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Quantum internet uses quantum entanglement to create theoretically unhackable communication channels.",
+        "funFact": "A quantum internet could enable instant secure communication across any distance!"
+    },
+    {
+        "id": "artificial_intelligence_001",
+        "category": "stem",
+        "subcategory": "Artificial Intelligence",
+        "difficulty": "medium",
+        "question": "What technique allows AI to learn from data without explicit programming?",
+        "options": [
+            "Machine Learning",
+            "Rule-based Systems",
+            "Expert Systems",
+            "Decision Trees"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Machine learning enables AI systems to improve their performance through experience with data.",
+        "funFact": "The term 'machine learning' was coined by Arthur Samuel in 1959 while working on checkers-playing programs."
+    },
+    {
+        "id": "machine_learning_001",
+        "category": "stem",
+        "subcategory": "Machine Learning",
+        "difficulty": "hard",
+        "question": "What type of learning uses labeled training data?",
+        "options": [
+            "Supervised learning",
+            "Unsupervised learning",
+            "Reinforcement learning",
+            "Semi-supervised learning"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Supervised learning uses input-output pairs to train models to make predictions on new data.",
+        "funFact": "Supervised learning powers most commercial AI applications, from email spam filters to medical diagnosis!"
+    },
+    {
+        "id": "neural_networks_001",
+        "category": "stem",
+        "subcategory": "Neural Networks",
+        "difficulty": "hard",
+        "question": "What is the basic processing unit in a neural network called?",
+        "options": [
+            "Neuron or Node",
+            "Synapse",
+            "Layer",
+            "Weight"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Artificial neurons receive inputs, apply weights and activation functions, and produce outputs.",
+        "funFact": "The human brain has about 86 billion neurons, while large AI models have trillions of parameters!"
+    },
+    {
+        "id": "natural_language_processing_001",
+        "category": "stem",
+        "subcategory": "Natural Language Processing",
+        "difficulty": "medium",
+        "question": "What AI technology enables computers to understand and generate human language?",
+        "options": [
+            "Natural Language Processing",
+            "Computer Vision",
+            "Speech Recognition",
+            "Text Mining"
+        ],
+        "correctAnswer": 0,
+        "explanation": "NLP combines computational linguistics with machine learning to process human language.",
+        "funFact": "Modern language models like GPT can write poetry, code, and even pass professional exams!"
+    },
+    {
+        "id": "computer_vision_001",
+        "category": "stem",
+        "subcategory": "Computer Vision",
+        "difficulty": "medium",
+        "question": "What AI field focuses on enabling computers to interpret visual information?",
+        "options": [
+            "Computer Vision",
+            "Image Processing",
+            "Pattern Recognition",
+            "Machine Learning"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Computer vision enables machines to identify objects, people, and activities in images and videos.",
+        "funFact": "Computer vision is used in everything from facial recognition to autonomous vehicles!"
+    },
+    {
+        "id": "robotics_001",
+        "category": "stem",
+        "subcategory": "Robotics",
+        "difficulty": "medium",
+        "question": "What are the three fundamental laws of robotics proposed by Isaac Asimov?",
+        "options": [
+            "Don't harm humans, obey humans, protect self",
+            "Move efficiently, process data, communicate",
+            "Sense environment, make decisions, take action",
+            "Learn continuously, adapt behavior, optimize performance"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Asimov's laws prioritize human safety and establish a hierarchy of robot behavior.",
+        "funFact": "These fictional laws have influenced real robotics ethics and safety protocols!"
+    },
+    {
+        "id": "expert_systems_001",
+        "category": "stem",
+        "subcategory": "Expert Systems",
+        "difficulty": "hard",
+        "question": "What component of an expert system contains domain knowledge?",
+        "options": [
+            "Knowledge base",
+            "Inference engine",
+            "User interface",
+            "Explanation facility"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The knowledge base stores facts, rules, and heuristics about a specific domain.",
+        "funFact": "Early expert systems like MYCIN could diagnose diseases as well as human specialists!"
+    },
+    {
+        "id": "ai_ethics_001",
+        "category": "stem",
+        "subcategory": "AI Ethics",
+        "difficulty": "hard",
+        "question": "What is the main concern regarding AI bias?",
+        "options": [
+            "Perpetuating unfair discrimination",
+            "Reducing efficiency",
+            "Increasing costs",
+            "Slowing innovation"
+        ],
+        "correctAnswer": 0,
+        "explanation": "AI systems can inherit and amplify biases present in their training data, leading to unfair outcomes.",
+        "funFact": "Studies have found bias in AI systems used for hiring, lending, and criminal justice!"
+    },
+    {
+        "id": "ai_applications_001",
+        "category": "stem",
+        "subcategory": "AI Applications",
+        "difficulty": "easy",
+        "question": "What AI application is most commonly used in smartphones?",
+        "options": [
+            "Voice assistants",
+            "Image recognition",
+            "Predictive text",
+            "Navigation"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Voice assistants like Siri, Google Assistant, and Alexa are widely used AI applications.",
+        "funFact": "Over 4 billion voice assistants are projected to be in use worldwide by 2024!"
+    },
+    {
+        "id": "deep_learning_001",
+        "category": "stem",
+        "subcategory": "Deep Learning",
+        "difficulty": "hard",
+        "question": "What distinguishes deep learning from traditional machine learning?",
+        "options": [
+            "Multiple hidden layers in neural networks",
+            "Faster processing",
+            "Less data required",
+            "Simpler algorithms"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Deep learning uses neural networks with many layers to automatically learn complex patterns.",
+        "funFact": "Deep learning has achieved superhuman performance in games like Go and chess!"
+    },
+    {
+        "id": "ai_hardware_001",
+        "category": "stem",
+        "subcategory": "AI Hardware",
+        "difficulty": "medium",
+        "question": "What type of processor is most commonly used for training AI models?",
+        "options": [
+            "GPU (Graphics Processing Unit)",
+            "CPU (Central Processing Unit)",
+            "FPGA (Field Programmable Gate Array)",
+            "ASIC (Application Specific Integrated Circuit)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "GPUs excel at the parallel computations required for training neural networks.",
+        "funFact": "Training large AI models can require thousands of GPUs running for weeks!"
+    },
+    {
+        "id": "ai_algorithms_001",
+        "category": "stem",
+        "subcategory": "AI Algorithms",
+        "difficulty": "hard",
+        "question": "What algorithm is commonly used for training neural networks?",
+        "options": [
+            "Backpropagation",
+            "Linear regression",
+            "Decision trees",
+            "K-means clustering"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Backpropagation calculates gradients to update neural network weights during training.",
+        "funFact": "Backpropagation was independently discovered multiple times in the 1970s and 1980s!"
+    },
+    {
+        "id": "ai_training_data_001",
+        "category": "stem",
+        "subcategory": "AI Training Data",
+        "difficulty": "medium",
+        "question": "What is the biggest challenge with AI training data?",
+        "options": [
+            "Quality and bias issues",
+            "Storage costs",
+            "Processing speed",
+            "Legal restrictions"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Poor quality or biased training data leads to unreliable and unfair AI systems.",
+        "funFact": "Data scientists spend 80% of their time cleaning and preparing data for AI training!"
+    },
+    {
+        "id": "ai_bias_001",
+        "category": "stem",
+        "subcategory": "AI Bias",
+        "difficulty": "hard",
+        "question": "What type of bias occurs when training data doesn't represent the real-world population?",
+        "options": [
+            "Selection bias",
+            "Confirmation bias",
+            "Anchoring bias",
+            "Availability bias"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Selection bias happens when training data systematically excludes certain groups or scenarios.",
+        "funFact": "Facial recognition systems have shown higher error rates for women and people of color due to biased training data!"
+    },
+    {
+        "id": "ai_regulation_001",
+        "category": "stem",
+        "subcategory": "AI Regulation",
+        "difficulty": "hard",
+        "question": "Which region has proposed the most comprehensive AI regulation framework?",
+        "options": [
+            "European Union",
+            "United States",
+            "China",
+            "Japan"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The EU's AI Act is the world's first comprehensive AI regulation, classifying AI systems by risk level.",
+        "funFact": "The EU AI Act could result in fines up to 6% of global annual turnover for violations!"
+    },
+    {
+        "id": "ai_research_001",
+        "category": "stem",
+        "subcategory": "AI Research",
+        "difficulty": "medium",
+        "question": "What was the name of the first computer program to beat a world champion at chess?",
+        "options": [
+            "Deep Blue",
+            "Watson",
+            "AlphaGo",
+            "Stockfish"
+        ],
+        "correctAnswer": 0,
+        "explanation": "IBM's Deep Blue defeated world chess champion Garry Kasparov in 1997.",
+        "funFact": "Deep Blue could evaluate 200 million chess positions per second!"
+    },
+    {
+        "id": "ai_startups_001",
+        "category": "stem",
+        "subcategory": "AI Startups",
+        "difficulty": "medium",
+        "question": "Which AI company created the ChatGPT language model?",
+        "options": [
+            "OpenAI",
+            "Google DeepMind",
+            "Anthropic",
+            "Meta AI"
+        ],
+        "correctAnswer": 0,
+        "explanation": "OpenAI developed the GPT series of language models, including ChatGPT.",
+        "funFact": "ChatGPT reached 100 million users faster than any other application in history!"
+    },
+    {
+        "id": "ai_in_healthcare_001",
+        "category": "stem",
+        "subcategory": "AI in Healthcare",
+        "difficulty": "medium",
+        "question": "What medical field has seen the most successful AI applications?",
+        "options": [
+            "Medical imaging",
+            "Drug discovery",
+            "Surgery",
+            "Diagnosis"
+        ],
+        "correctAnswer": 0,
+        "explanation": "AI has achieved remarkable success in analyzing medical images like X-rays, CT scans, and MRIs.",
+        "funFact": "AI can detect some cancers more accurately than human radiologists!"
+    },
+    {
+        "id": "ai_in_finance_001",
+        "category": "stem",
+        "subcategory": "AI in Finance",
+        "difficulty": "medium",
+        "question": "What financial application commonly uses AI for pattern recognition?",
+        "options": [
+            "Fraud detection",
+            "Interest calculation",
+            "Currency exchange",
+            "Account opening"
+        ],
+        "correctAnswer": 0,
+        "explanation": "AI analyzes transaction patterns to identify potentially fraudulent activities in real-time.",
+        "funFact": "AI fraud detection systems can analyze thousands of transactions per second!"
+    },
+    {
+        "id": "ai_in_education_001",
+        "category": "stem",
+        "subcategory": "AI in Education",
+        "difficulty": "medium",
+        "question": "How can AI personalize learning for students?",
+        "options": [
+            "Adapting content to individual learning styles",
+            "Replacing teachers",
+            "Grading all assignments",
+            "Managing school schedules"
+        ],
+        "correctAnswer": 0,
+        "explanation": "AI can analyze student performance and adjust content difficulty and presentation accordingly.",
+        "funFact": "Personalized AI tutoring can improve learning outcomes by up to 40%!"
+    },
+    {
+        "id": "future_of_ai_001",
+        "category": "stem",
+        "subcategory": "Future of AI",
+        "difficulty": "hard",
+        "question": "What is Artificial General Intelligence (AGI)?",
+        "options": [
+            "AI that matches human cognitive abilities",
+            "AI that specializes in one task",
+            "AI that processes faster than humans",
+            "AI that requires no training"
+        ],
+        "correctAnswer": 0,
+        "explanation": "AGI would have human-like cognitive abilities across all domains, unlike current narrow AI.",
+        "funFact": "Experts disagree on when AGI might be achieved, with predictions ranging from 2030 to never!"
+    },
+    {
+        "id": "smartphones_mobile_devices_001",
+        "category": "stem",
+        "subcategory": "Smartphones & Mobile Devices",
+        "difficulty": "easy",
+        "question": "Which company released the first iPhone?",
+        "options": [
+            "Apple",
+            "Samsung",
+            "Google",
+            "Microsoft"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Apple released the first iPhone in 2007, revolutionizing the smartphone industry.",
+        "funFact": "The original iPhone didn't have an App Store - it was added in 2008 with iOS 2.0!"
+    },
+    {
+        "id": "iphone_models_001",
+        "category": "stem",
+        "subcategory": "iPhone Models",
+        "difficulty": "medium",
+        "question": "Which iPhone was the first to feature Face ID?",
+        "options": [
+            "iPhone X",
+            "iPhone 8",
+            "iPhone 11",
+            "iPhone 12"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The iPhone X introduced Face ID facial recognition technology in 2017.",
+        "funFact": "Face ID uses over 30,000 infrared dots to map your face in 3D!"
+    },
+    {
+        "id": "android_devices_001",
+        "category": "stem",
+        "subcategory": "Android Devices",
+        "difficulty": "medium",
+        "question": "Which company developed the Android operating system?",
+        "options": [
+            "Google",
+            "Samsung",
+            "HTC",
+            "Motorola"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Google acquired Android Inc. in 2005 and released the first Android phone in 2008.",
+        "funFact": "Android is now the most popular mobile operating system worldwide!"
+    },
+    {
+        "id": "mobile_operating_systems_001",
+        "category": "stem",
+        "subcategory": "Mobile Operating Systems",
+        "difficulty": "easy",
+        "question": "What are the two dominant mobile operating systems?",
+        "options": [
+            "iOS and Android",
+            "Windows and iOS",
+            "Android and BlackBerry",
+            "iOS and Windows"
+        ],
+        "correctAnswer": 0,
+        "explanation": "iOS and Android together account for over 99% of the global smartphone market.",
+        "funFact": "Android has about 70% global market share while iOS dominates in premium markets!"
+    },
+    {
+        "id": "mobile_apps_001",
+        "category": "stem",
+        "subcategory": "Mobile Apps",
+        "difficulty": "medium",
+        "question": "Which platform has the largest mobile app store?",
+        "options": [
+            "Google Play Store",
+            "Apple App Store",
+            "Amazon Appstore",
+            "Samsung Galaxy Store"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Google Play Store has over 3 million apps, making it the largest mobile app marketplace.",
+        "funFact": "Over 100 billion apps are downloaded annually from app stores worldwide!"
+    },
+    {
+        "id": "mobile_security_001",
+        "category": "stem",
+        "subcategory": "Mobile Security",
+        "difficulty": "medium",
+        "question": "What is the most secure way to unlock a smartphone?",
+        "options": [
+            "Biometric authentication",
+            "PIN code",
+            "Pattern lock",
+            "Voice recognition"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Biometric authentication like fingerprints and facial recognition are more secure than traditional methods.",
+        "funFact": "The chance of someone else's fingerprint unlocking your phone is about 1 in 50,000!"
+    },
+    {
+        "id": "mobile_photography_001",
+        "category": "stem",
+        "subcategory": "Mobile Photography",
+        "difficulty": "medium",
+        "question": "What technology allows smartphones to create depth-of-field effects?",
+        "options": [
+            "Multiple camera lenses",
+            "Larger sensors",
+            "Faster processors",
+            "Higher resolution"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Multiple cameras enable computational photography effects like portrait mode and depth mapping.",
+        "funFact": "Modern smartphones can have up to 5 different camera lenses for various purposes!"
+    },
+    {
+        "id": "mobile_gaming_001",
+        "category": "stem",
+        "subcategory": "Mobile Gaming",
+        "difficulty": "easy",
+        "question": "What was one of the first massively popular mobile games?",
+        "options": [
+            "Angry Birds",
+            "Candy Crush",
+            "Pokemon Go",
+            "Clash of Clans"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Angry Birds became a global phenomenon in 2009, helping establish mobile gaming.",
+        "funFact": "Angry Birds has been downloaded over 4 billion times across all platforms!"
+    },
+    {
+        "id": "mobile_payments_001",
+        "category": "stem",
+        "subcategory": "Mobile Payments",
+        "difficulty": "medium",
+        "question": "What technology enables contactless mobile payments?",
+        "options": [
+            "NFC (Near Field Communication)",
+            "Bluetooth",
+            "Wi-Fi",
+            "Cellular"
+        ],
+        "correctAnswer": 0,
+        "explanation": "NFC allows secure short-range communication for payments like Apple Pay and Google Pay.",
+        "funFact": "Mobile payments are expected to reach $12 trillion globally by 2025!"
+    },
+    {
+        "id": "mobile_connectivity_001",
+        "category": "stem",
+        "subcategory": "Mobile Connectivity",
+        "difficulty": "easy",
+        "question": "What does 5G represent in mobile networking?",
+        "options": [
+            "Fifth generation",
+            "5 Gigabit",
+            "5 Gateway",
+            "Global network"
+        ],
+        "correctAnswer": 0,
+        "explanation": "5G is the fifth generation of mobile network technology, offering faster speeds and lower latency.",
+        "funFact": "5G can be up to 100 times faster than 4G with speeds reaching 10 Gbps!"
+    },
+    {
+        "id": "international_interventions_001",
+        "category": "history",
+        "subcategory": "International Interventions",
+        "difficulty": "hard",
+        "question": "What doctrine justifies international intervention to protect civilians from mass atrocities?",
+        "options": [
+            "Responsibility to Protect",
+            "Humanitarian Intervention",
+            "Just War Theory",
+            "Collective Security"
+        ],
+        "correctAnswer": 0,
+        "explanation": "R2P establishes that states have a responsibility to protect their populations from genocide and crimes against humanity.",
+        "funFact": "R2P was unanimously adopted by world leaders at the 2005 UN World Summit!"
+    },
+    {
+        "id": "war_crimes_investigations_001",
+        "category": "history",
+        "subcategory": "War Crimes Investigations",
+        "difficulty": "hard",
+        "question": "Which court prosecutes individuals for war crimes and crimes against humanity?",
+        "options": [
+            "International Criminal Court",
+            "International Court of Justice",
+            "European Court of Human Rights",
+            "Special Tribunal"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The ICC prosecutes individuals for genocide, crimes against humanity, and war crimes.",
+        "funFact": "The ICC has issued arrest warrants for over 50 individuals, including sitting heads of state!"
+    },
+    {
+        "id": "peacekeeping_operations_001",
+        "category": "history",
+        "subcategory": "Peacekeeping Operations",
+        "difficulty": "medium",
+        "question": "Which organization conducts the most peacekeeping operations globally?",
+        "options": [
+            "United Nations",
+            "African Union",
+            "European Union",
+            "NATO"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The UN operates the world's largest peacekeeping force with over 70,000 personnel.",
+        "funFact": "UN Peacekeepers have served in 71 peacekeeping operations since 1948!"
+    },
+    {
+        "id": "military_alliances_001",
+        "category": "history",
+        "subcategory": "Military Alliances",
+        "difficulty": "easy",
+        "question": "What is the largest military alliance in the world?",
+        "options": [
+            "NATO",
+            "CSTO",
+            "ANZUS",
+            "Rio Pact"
+        ],
+        "correctAnswer": 0,
+        "explanation": "NATO (North Atlantic Treaty Organization) has 31 member countries and is the largest military alliance.",
+        "funFact": "NATO's Article 5 has only been invoked once - after the 9/11 attacks on the United States!"
+    },
+    {
+        "id": "arms_control_001",
+        "category": "history",
+        "subcategory": "Arms Control",
+        "difficulty": "hard",
+        "question": "What treaty bans the production, stockpiling, and use of chemical weapons?",
+        "options": [
+            "Chemical Weapons Convention",
+            "Biological Weapons Convention",
+            "Nuclear Non-Proliferation Treaty",
+            "Comprehensive Test Ban Treaty"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The CWC prohibits chemical weapons and requires destruction of existing stockpiles.",
+        "funFact": "The CWC has eliminated over 99% of declared chemical weapons stockpiles worldwide!"
+    },
+    {
+        "id": "sanctions_regimes_001",
+        "category": "history",
+        "subcategory": "Sanctions Regimes",
+        "difficulty": "medium",
+        "question": "Which international body can impose legally binding economic sanctions?",
+        "options": [
+            "UN Security Council",
+            "General Assembly",
+            "International Court of Justice",
+            "Economic and Social Council"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Only the UN Security Council can impose legally binding sanctions under international law.",
+        "funFact": "The UN has imposed sanctions on 14 countries and numerous individuals and entities!"
+    },
+    {
+        "id": "conflict_resolution_001",
+        "category": "history",
+        "subcategory": "Conflict Resolution",
+        "difficulty": "medium",
+        "question": "What process involves neutral third parties helping conflicting parties reach agreement?",
+        "options": [
+            "Mediation",
+            "Arbitration",
+            "Litigation",
+            "Negotiation"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Mediation involves neutral mediators facilitating dialogue between conflicting parties.",
+        "funFact": "Successful mediation can reduce the duration of conflicts by an average of 6 years!"
+    },
+    {
+        "id": "post_conflict_reconstruction_001",
+        "category": "history",
+        "subcategory": "Post-Conflict Reconstruction",
+        "difficulty": "hard",
+        "question": "What international body coordinates post-conflict reconstruction efforts?",
+        "options": [
+            "UN Peacebuilding Commission",
+            "World Bank",
+            "International Monetary Fund",
+            "Development Assistance Committee"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The UN Peacebuilding Commission supports peace efforts in post-conflict countries.",
+        "funFact": "Post-conflict countries have a 40% chance of returning to conflict within 10 years without proper reconstruction!"
+    },
+    {
+        "id": "security_council_actions_001",
+        "category": "history",
+        "subcategory": "Security Council Actions",
+        "difficulty": "medium",
+        "question": "How many permanent members does the UN Security Council have?",
+        "options": [
+            "5",
+            "6",
+            "10",
+            "15"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The five permanent members are the US, UK, France, Russia, and China, each with veto power.",
+        "funFact": "The five permanent members were the major Allied powers that won World War II!"
+    },
+    {
+        "id": "regional_security_issues_001",
+        "category": "history",
+        "subcategory": "Regional Security Issues",
+        "difficulty": "medium",
+        "question": "What organization promotes security cooperation in Southeast Asia?",
+        "options": [
+            "ASEAN",
+            "APEC",
+            "SAARC",
+            "SCO"
+        ],
+        "correctAnswer": 0,
+        "explanation": "ASEAN (Association of Southeast Asian Nations) promotes regional peace and security.",
+        "funFact": "ASEAN's 'Way' emphasizes consensus-building and non-interference in internal affairs!"
+    },
+    {
+        "id": "terrorism_threats_001",
+        "category": "history",
+        "subcategory": "Terrorism Threats",
+        "difficulty": "medium",
+        "question": "What international organization leads global counter-terrorism efforts?",
+        "options": [
+            "UN Counter-Terrorism Committee",
+            "INTERPOL",
+            "NATO",
+            "G7"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The UN Counter-Terrorism Committee coordinates international counter-terrorism efforts.",
+        "funFact": "The UN has 19 international conventions and protocols to combat terrorism!"
+    },
+    {
+        "id": "cyber_conflicts_001",
+        "category": "stem",
+        "subcategory": "Cyber Conflicts",
+        "difficulty": "hard",
+        "question": "What was the first known cyber weapon to cause physical damage?",
+        "options": [
+            "Stuxnet",
+            "Flame",
+            "Zeus",
+            "Conficker"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Stuxnet was designed to damage Iranian nuclear centrifuges and caused physical destruction.",
+        "funFact": "Stuxnet was so sophisticated it's believed to have set back Iran's nuclear program by several years!"
+    },
+    {
+        "id": "proxy_wars_001",
+        "category": "history",
+        "subcategory": "Proxy Wars",
+        "difficulty": "hard",
+        "question": "During the Cold War, which conflict was considered a major proxy war?",
+        "options": [
+            "Vietnam War",
+            "Korean War",
+            "Suez Crisis",
+            "Hungarian Revolution"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Vietnam War was a proxy conflict between the US-backed South and Soviet/Chinese-backed North.",
+        "funFact": "The Cold War involved over 40 proxy conflicts across six continents!"
+    },
+    {
+        "id": "public_health_safety_001",
+        "category": "stem",
+        "subcategory": "Public Health & Safety",
+        "difficulty": "medium",
+        "question": "Which organization leads international health within the UN system?",
+        "options": [
+            "World Health Organization",
+            "UNICEF",
+            "World Food Programme",
+            "UNDP"
+        ],
+        "correctAnswer": 0,
+        "explanation": "WHO is the directing authority on international health matters within the UN system.",
+        "funFact": "WHO was established in 1948 with the goal of achieving 'Health for All'!"
+    },
+    {
+        "id": "disease_prevention_001",
+        "category": "stem",
+        "subcategory": "Disease Prevention",
+        "difficulty": "easy",
+        "question": "What is the most effective method for preventing infectious diseases?",
+        "options": [
+            "Vaccination",
+            "Antibiotics",
+            "Quarantine",
+            "Hand washing"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Vaccination has prevented more deaths from infectious diseases than any other public health intervention.",
+        "funFact": "Vaccines prevent 2-3 million deaths annually and have eradicated smallpox completely!"
+    },
+    {
+        "id": "food_safety_001",
+        "category": "stem",
+        "subcategory": "Food Safety",
+        "difficulty": "medium",
+        "question": "What temperature should ground beef be cooked to for safety?",
+        "options": [
+            "160°F (71°C)",
+            "145°F (63°C)",
+            "165°F (74°C)",
+            "180°F (82°C)"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Ground beef should reach 160°F to kill harmful bacteria like E. coli and Salmonella.",
+        "funFact": "Foodborne illnesses affect 1 in 6 Americans annually, causing 128,000 hospitalizations!"
+    },
+    {
+        "id": "water_quality_001",
+        "category": "stem",
+        "subcategory": "Water Quality",
+        "difficulty": "medium",
+        "question": "What is the most common water contaminant in developing countries?",
+        "options": [
+            "Bacterial pathogens",
+            "Heavy metals",
+            "Pesticides",
+            "Industrial chemicals"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Bacterial contamination from inadequate sanitation is the leading cause of waterborne illness.",
+        "funFact": "Unsafe water kills more people annually than war, terrorism, and weapons of mass destruction combined!"
+    },
+    {
+        "id": "air_pollution_001",
+        "category": "stem",
+        "subcategory": "Air Pollution",
+        "difficulty": "medium",
+        "question": "What air pollutant is considered the most dangerous to human health?",
+        "options": [
+            "PM2.5 (fine particulate matter)",
+            "Ozone",
+            "Nitrogen dioxide",
+            "Sulfur dioxide"
+        ],
+        "correctAnswer": 0,
+        "explanation": "PM2.5 particles are so small they can penetrate deep into lungs and enter the bloodstream.",
+        "funFact": "Air pollution reduces global life expectancy by an average of 2.2 years!"
+    },
+    {
+        "id": "workplace_safety_001",
+        "category": "stem",
+        "subcategory": "Workplace Safety",
+        "difficulty": "medium",
+        "question": "Which US agency is responsible for workplace safety and health?",
+        "options": [
+            "OSHA",
+            "EPA",
+            "CDC",
+            "NIOSH"
+        ],
+        "correctAnswer": 0,
+        "explanation": "OSHA (Occupational Safety and Health Administration) enforces workplace safety standards.",
+        "funFact": "Since OSHA was created in 1970, workplace fatalities have decreased by 60% despite doubling employment!"
+    },
+    {
+        "id": "consumer_protection_001",
+        "category": "stem",
+        "subcategory": "Consumer Protection",
+        "difficulty": "medium",
+        "question": "Which agency regulates consumer products for safety in the US?",
+        "options": [
+            "Consumer Product Safety Commission",
+            "Federal Trade Commission",
+            "Food and Drug Administration",
+            "Environmental Protection Agency"
+        ],
+        "correctAnswer": 0,
+        "explanation": "CPSC protects consumers from unreasonable risks of injury from consumer products.",
+        "funFact": "CPSC oversees the safety of over 15,000 types of consumer products!"
+    },
+    {
+        "id": "drug_safety_001",
+        "category": "stem",
+        "subcategory": "Drug Safety",
+        "difficulty": "hard",
+        "question": "What phase of clinical trials tests drug safety in healthy volunteers?",
+        "options": [
+            "Phase I",
+            "Phase II",
+            "Phase III",
+            "Phase IV"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Phase I trials primarily test safety and dosage in small groups of healthy volunteers or patients.",
+        "funFact": "Only 1 in 5,000 discovered compounds ever make it to human testing!"
+    },
+    {
+        "id": "medical_device_safety_001",
+        "category": "stem",
+        "subcategory": "Medical Device Safety",
+        "difficulty": "hard",
+        "question": "What classification system does the FDA use for medical devices?",
+        "options": [
+            "Class I, II, III based on risk",
+            "Category A, B, C based on function",
+            "Type 1, 2, 3 based on complexity",
+            "Level Basic, Standard, Advanced"
+        ],
+        "correctAnswer": 0,
+        "explanation": "FDA classifies medical devices into three classes based on the level of control needed to ensure safety.",
+        "funFact": "Class III devices like pacemakers require the most rigorous testing and FDA approval!"
+    },
+    {
+        "id": "public_health_emergencies_001",
+        "category": "stem",
+        "subcategory": "Public Health Emergencies",
+        "difficulty": "medium",
+        "question": "What was declared the first Public Health Emergency of International Concern by WHO?",
+        "options": [
+            "H1N1 pandemic",
+            "SARS outbreak",
+            "Ebola outbreak",
+            "Zika virus"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The 2009 H1N1 pandemic was the first event to trigger WHO's new emergency declaration system.",
+        "funFact": "WHO has declared Public Health Emergencies only 8 times since the system was created in 2005!"
+    },
+    {
+        "id": "health_surveillance_001",
+        "category": "stem",
+        "subcategory": "Health Surveillance",
+        "difficulty": "hard",
+        "question": "What system monitors disease patterns to detect outbreaks early?",
+        "options": [
+            "Epidemiological surveillance",
+            "Clinical monitoring",
+            "Laboratory screening",
+            "Demographic tracking"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Epidemiological surveillance systematically collects and analyzes health data to detect disease patterns.",
+        "funFact": "Disease surveillance helped detect COVID-19's emergence and track its global spread!"
+    },
+    {
+        "id": "epidemic_preparedness_001",
+        "category": "stem",
+        "subcategory": "Epidemic Preparedness",
+        "difficulty": "medium",
+        "question": "What international health regulation governs epidemic preparedness?",
+        "options": [
+            "International Health Regulations",
+            "Global Health Security Agenda",
+            "Pandemic Preparedness Treaty",
+            "International Sanitary Regulations"
+        ],
+        "correctAnswer": 0,
+        "explanation": "IHR (2005) requires countries to develop core capacities for detecting and responding to health emergencies.",
+        "funFact": "Only 1/3 of countries met IHR core capacity requirements before COVID-19!"
+    },
+    {
+        "id": "community_health_001",
+        "category": "stem",
+        "subcategory": "Community Health",
+        "difficulty": "medium",
+        "question": "What approach addresses health through community-based interventions?",
+        "options": [
+            "Primary health care",
+            "Tertiary care",
+            "Acute care",
+            "Specialized care"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Primary health care provides comprehensive, community-based care focusing on prevention and health promotion.",
+        "funFact": "Countries with strong primary health care systems have better health outcomes at lower costs!"
+    },
+    {
+        "id": "health_education_001",
+        "category": "stem",
+        "subcategory": "Health Education",
+        "difficulty": "easy",
+        "question": "What is the recommended amount of moderate exercise per week for adults?",
+        "options": [
+            "150 minutes",
+            "120 minutes",
+            "180 minutes",
+            "200 minutes"
+        ],
+        "correctAnswer": 0,
+        "explanation": "WHO recommends at least 150 minutes of moderate-intensity aerobic activity per week for adults.",
+        "funFact": "Regular exercise can reduce the risk of heart disease by up to 50%!"
+    },
+    {
+        "id": "injury_prevention_001",
+        "category": "stem",
+        "subcategory": "Injury Prevention",
+        "difficulty": "medium",
+        "question": "What safety device has most reduced automotive fatalities?",
+        "options": [
+            "Seatbelts",
+            "Airbags",
+            "Anti-lock brakes",
+            "Electronic stability control"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Seatbelts are estimated to save over 15,000 lives annually in the US alone.",
+        "funFact": "Seatbelt use has increased from 11% in 1981 to over 90% today, saving hundreds of thousands of lives!"
+    },
+    {
+        "id": "environmental_health_001",
+        "category": "stem",
+        "subcategory": "Environmental Health",
+        "difficulty": "medium",
+        "question": "What environmental factor causes the most preventable deaths globally?",
+        "options": [
+            "Air pollution",
+            "Water contamination",
+            "Soil pollution",
+            "Noise pollution"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Air pollution causes over 7 million premature deaths annually worldwide.",
+        "funFact": "Indoor air pollution from cooking fires kills more people than malaria and tuberculosis combined!"
+    },
+    {
+        "id": "occupational_health_001",
+        "category": "stem",
+        "subcategory": "Occupational Health",
+        "difficulty": "hard",
+        "question": "What occupational disease is most commonly reported worldwide?",
+        "options": [
+            "Musculoskeletal disorders",
+            "Respiratory diseases",
+            "Hearing loss",
+            "Skin diseases"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Work-related musculoskeletal disorders account for the majority of occupational health problems globally.",
+        "funFact": "Back injuries alone cost the US economy over $50 billion annually in lost productivity!"
+    },
+    {
+        "id": "emergency_response_001",
+        "category": "stem",
+        "subcategory": "Emergency Response",
+        "difficulty": "medium",
+        "question": "What is the universal emergency phone number in most of Europe?",
+        "options": [
+            "112",
+            "911",
+            "999",
+            "000"
+        ],
+        "correctAnswer": 0,
+        "explanation": "112 is the European emergency number that works across all EU countries.",
+        "funFact": "112 can be dialed from any phone, even locked mobile phones, and works in over 80 countries!"
+    },
+    {
+        "id": "public_safety_measures_001",
+        "category": "stem",
+        "subcategory": "Public Safety Measures",
+        "difficulty": "medium",
+        "question": "What technology has most improved emergency response times?",
+        "options": [
+            "GPS and mobile phones",
+            "Radios",
+            "Computers",
+            "Helicopters"
+        ],
+        "correctAnswer": 0,
+        "explanation": "GPS-enabled mobile phones allow precise location identification, dramatically improving response times.",
+        "funFact": "Enhanced 911 systems can locate callers within 50-300 meters, compared to miles with older systems!"
+    },
+    {
+        "id": "health_policy_implementation_001",
+        "category": "stem",
+        "subcategory": "Health Policy Implementation",
+        "difficulty": "hard",
+        "question": "What approach measures health policy effectiveness across populations?",
+        "options": [
+            "Population health metrics",
+            "Individual health records",
+            "Hospital statistics",
+            "Insurance claims"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Population health metrics assess overall health outcomes and health equity across entire populations.",
+        "funFact": "Countries that invest 1% more of GDP in health see 0.5-year increases in life expectancy!"
+    },
+    {
+        "id": "global_health_security_001",
+        "category": "stem",
+        "subcategory": "Global Health Security",
+        "difficulty": "hard",
+        "question": "What initiative aims to strengthen global capacity to prevent health threats?",
+        "options": [
+            "Global Health Security Agenda",
+            "International Health Partnership",
+            "Global Fund",
+            "GAVI Alliance"
+        ],
+        "correctAnswer": 0,
+        "explanation": "GHSA is a multi-country initiative to strengthen global capacity to prevent, detect, and respond to health threats.",
+        "funFact": "GHSA involves over 70 countries working together to prevent the next pandemic!"
+    },
+    {
+        "id": "computers_hardware_001",
+        "category": "stem",
+        "subcategory": "Computers & Hardware",
+        "difficulty": "easy",
+        "question": "What does RAM stand for in computer terminology?",
+        "options": [
+            "Random Access Memory",
+            "Rapid Access Memory",
+            "Read Access Memory",
+            "Real Access Memory"
+        ],
+        "correctAnswer": 0,
+        "explanation": "RAM allows data items to be read or written in almost the same amount of time regardless of their physical location.",
+        "funFact": "The first RAM chip in 1970 held only 1,024 bits - modern computers have billions of times more memory!"
+    },
+    {
+        "id": "processors_cpus_001",
+        "category": "stem",
+        "subcategory": "Processors & CPUs",
+        "difficulty": "medium",
+        "question": "What architecture do most modern smartphone processors use?",
+        "options": [
+            "ARM",
+            "x86",
+            "RISC-V",
+            "MIPS"
+        ],
+        "correctAnswer": 0,
+        "explanation": "ARM processors are designed for energy efficiency, making them ideal for mobile devices.",
+        "funFact": "ARM processors power over 95% of smartphones and tablets worldwide!"
+    },
+    {
+        "id": "graphics_cards_001",
+        "category": "stem",
+        "subcategory": "Graphics Cards",
+        "difficulty": "hard",
+        "question": "Which company developed the first GPU with real-time ray tracing capabilities?",
+        "options": [
+            "NVIDIA",
+            "AMD",
+            "Intel",
+            "Qualcomm"
+        ],
+        "correctAnswer": 0,
+        "explanation": "NVIDIA introduced the RTX series in 2018, featuring dedicated RT cores for real-time ray tracing.",
+        "funFact": "Ray tracing simulates the physical behavior of light, creating incredibly realistic reflections and shadows in games."
+    },
+    {
+        "id": "memory_storage_001",
+        "category": "stem",
+        "subcategory": "Memory & Storage",
+        "difficulty": "easy",
+        "question": "What type of storage is fastest for accessing data?",
+        "options": [
+            "SSD (Solid State Drive)",
+            "HDD (Hard Disk Drive)",
+            "CD-ROM",
+            "Floppy Disk"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SSDs use flash memory with no moving parts, making them much faster than traditional hard drives.",
+        "funFact": "Modern NVMe SSDs can read data at speeds over 7,000 MB/s, compared to about 150 MB/s for traditional hard drives."
+    },
+    {
+        "id": "motherboards_001",
+        "category": "stem",
+        "subcategory": "Motherboards",
+        "difficulty": "medium",
+        "question": "What component on a motherboard stores the BIOS?",
+        "options": [
+            "CMOS chip",
+            "CPU socket",
+            "RAM slots",
+            "Expansion slots"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The CMOS chip contains the BIOS firmware and system settings, powered by a small battery.",
+        "funFact": "BIOS stands for Basic Input/Output System and was first developed by IBM in 1975!"
+    },
+    {
+        "id": "computer_cases_001",
+        "category": "stem",
+        "subcategory": "Computer Cases",
+        "difficulty": "easy",
+        "question": "What is the most common form factor for desktop computer cases?",
+        "options": [
+            "ATX",
+            "Mini-ITX",
+            "Micro-ATX",
+            "E-ATX"
+        ],
+        "correctAnswer": 0,
+        "explanation": "ATX (Advanced Technology eXtended) is the standard form factor for most desktop computers.",
+        "funFact": "The ATX standard was introduced by Intel in 1995 and is still used today with minor updates!"
+    },
+    {
+        "id": "cooling_systems_001",
+        "category": "stem",
+        "subcategory": "Cooling Systems",
+        "difficulty": "medium",
+        "question": "What type of cooling is most effective for high-performance CPUs?",
+        "options": [
+            "Liquid cooling",
+            "Air cooling",
+            "Thermal pads",
+            "Heat sinks only"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Liquid cooling systems can dissipate heat more efficiently than air cooling for high-end processors.",
+        "funFact": "Custom liquid cooling loops can keep CPUs 20-30°C cooler than air cooling!"
+    },
+    {
+        "id": "power_supplies_001",
+        "category": "stem",
+        "subcategory": "Power Supplies",
+        "difficulty": "medium",
+        "question": "What efficiency rating indicates the highest quality power supply?",
+        "options": [
+            "80 Plus Titanium",
+            "80 Plus Gold",
+            "80 Plus Silver",
+            "80 Plus Bronze"
+        ],
+        "correctAnswer": 0,
+        "explanation": "80 Plus Titanium PSUs achieve 94% efficiency at 50% load, the highest standard rating.",
+        "funFact": "An efficient power supply can save over $100 per year in electricity costs!"
+    },
+    {
+        "id": "peripheral_devices_001",
+        "category": "stem",
+        "subcategory": "Peripheral Devices",
+        "difficulty": "easy",
+        "question": "What interface is most commonly used for modern keyboards and mice?",
+        "options": [
+            "USB",
+            "PS/2",
+            "Serial",
+            "Parallel"
+        ],
+        "correctAnswer": 0,
+        "explanation": "USB (Universal Serial Bus) is the standard interface for most computer peripherals today.",
+        "funFact": "USB was designed to replace many different types of connections with a single universal standard!"
+    },
+    {
+        "id": "gaming_hardware_001",
+        "category": "stem",
+        "subcategory": "Gaming Hardware",
+        "difficulty": "hard",
+        "question": "What technology allows multiple graphics cards to work together?",
+        "options": [
+            "SLI/CrossFire",
+            "Dual-GPU",
+            "Multi-Monitor",
+            "Graphics Bridge"
+        ],
+        "correctAnswer": 0,
+        "explanation": "SLI (NVIDIA) and CrossFire (AMD) technologies allow multiple graphics cards to render together.",
+        "funFact": "Modern game engines often perform better with single powerful GPUs than multiple weaker ones!"
+    },
+    {
+        "id": "server_hardware_001",
+        "category": "stem",
+        "subcategory": "Server Hardware",
+        "difficulty": "hard",
+        "question": "What server hardware feature allows hot-swapping of failed components?",
+        "options": [
+            "Redundant design",
+            "Load balancing",
+            "Virtualization",
+            "Cloud computing"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Redundant server designs allow components to be replaced without shutting down the system.",
+        "funFact": "Enterprise servers can achieve 99.999% uptime (5 minutes downtime per year) through redundancy!"
+    },
+    {
+        "id": "laptop_computers_001",
+        "category": "stem",
+        "subcategory": "Laptop Computers",
+        "difficulty": "medium",
+        "question": "What battery technology is most common in modern laptops?",
+        "options": [
+            "Lithium-ion",
+            "Nickel-Metal Hydride",
+            "Lithium Polymer",
+            "Nickel-Cadmium"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Lithium-ion batteries offer the best combination of energy density, weight, and lifespan for laptops.",
+        "funFact": "Modern laptop batteries can retain 80% capacity after 1000 charge cycles!"
+    },
+    {
+        "id": "desktop_computers_001",
+        "category": "stem",
+        "subcategory": "Desktop Computers",
+        "difficulty": "easy",
+        "question": "What is the main advantage of desktop computers over laptops?",
+        "options": [
+            "Better performance per dollar",
+            "Portability",
+            "Battery life",
+            "Wireless connectivity"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Desktop computers typically offer better performance and upgradeability for the same price as laptops.",
+        "funFact": "Desktop computers can be upgraded component by component, potentially lasting 10+ years!"
+    },
+    {
+        "id": "workstations_001",
+        "category": "stem",
+        "subcategory": "Workstations",
+        "difficulty": "hard",
+        "question": "What type of RAM is typically used in professional workstations?",
+        "options": [
+            "ECC RAM",
+            "DDR RAM",
+            "GDDR RAM",
+            "HBM RAM"
+        ],
+        "correctAnswer": 0,
+        "explanation": "ECC (Error-Correcting Code) RAM detects and corrects memory errors, crucial for professional applications.",
+        "funFact": "ECC RAM can prevent system crashes that would cost thousands of dollars in lost work!"
+    },
+    {
+        "id": "mini_computers_001",
+        "category": "stem",
+        "subcategory": "Mini Computers",
+        "difficulty": "medium",
+        "question": "Which company popularized single-board computers with the Pi series?",
+        "options": [
+            "Raspberry Pi Foundation",
+            "Arduino",
+            "BeagleBoard",
+            "Intel"
+        ],
+        "correctAnswer": 0,
+        "explanation": "The Raspberry Pi Foundation created affordable single-board computers for education and hobbyists.",
+        "funFact": "Over 50 million Raspberry Pi computers have been sold since 2012!"
+    },
+    {
+        "id": "hardware_upgrades_001",
+        "category": "stem",
+        "subcategory": "Hardware Upgrades",
+        "difficulty": "medium",
+        "question": "What is usually the most cost-effective upgrade for improving computer performance?",
+        "options": [
+            "Adding more RAM",
+            "Upgrading CPU",
+            "New graphics card",
+            "Faster hard drive"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Adding RAM is often the cheapest way to significantly improve overall system performance.",
+        "funFact": "Doubling RAM can improve performance by 20-50% for memory-intensive applications!"
+    },
+    {
+        "id": "computer_assembly_001",
+        "category": "stem",
+        "subcategory": "Computer Assembly",
+        "difficulty": "medium",
+        "question": "What should you do first when building a computer to prevent static damage?",
+        "options": [
+            "Ground yourself",
+            "Install the power supply",
+            "Insert the motherboard",
+            "Connect cables"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Grounding yourself prevents static electricity from damaging sensitive computer components.",
+        "funFact": "Static electricity can carry thousands of volts - enough to instantly destroy computer chips!"
+    },
+    {
+        "id": "hardware_troubleshooting_001",
+        "category": "stem",
+        "subcategory": "Hardware Troubleshooting",
+        "difficulty": "medium",
+        "question": "What is often the first step in diagnosing computer hardware problems?",
+        "options": [
+            "Check power connections",
+            "Run diagnostics",
+            "Replace components",
+            "Update drivers"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Many computer problems are caused by loose or faulty power connections.",
+        "funFact": "80% of computer 'failures' are actually caused by loose connections or power issues!"
+    },
+    {
+        "id": "performance_benchmarks_001",
+        "category": "stem",
+        "subcategory": "Performance Benchmarks",
+        "difficulty": "hard",
+        "question": "What benchmark is commonly used to test CPU performance?",
+        "options": [
+            "Cinebench",
+            "3DMark",
+            "CrystalDiskMark",
+            "UserBench"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Cinebench uses real-world rendering tasks to measure CPU performance across multiple cores.",
+        "funFact": "Benchmark scores can vary by 10-20% based on system temperature and background processes!"
+    }
+]
