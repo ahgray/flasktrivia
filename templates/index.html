@@ -59,6 +59,22 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        .total-questions-info {
+            text-align: center;
+            background: #f0f4ff;
+            border: 2px solid #667eea;
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 30px;
+            color: #667eea;
+            font-size: 1.1em;
+        }
+
+        .total-questions-info strong {
+            font-size: 1.3em;
+            color: #5a67d8;
+        }
+
         .setup-form {
             text-align: center;
         }
@@ -339,6 +355,9 @@
         
         <!-- Setup Screen -->
         <div id="setupScreen" class="screen active">
+            <div class="total-questions-info">
+                <p>🎯 <strong>{{ total_questions }}</strong> questions available in our database!</p>
+            </div>
             <form class="setup-form" onsubmit="startGame(event)">
                 <div class="form-group">
                     <label for="numQuestions">How many questions would you like?</label>

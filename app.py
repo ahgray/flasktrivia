@@ -68,7 +68,8 @@ QUESTIONS = load_questions()
 @app.route('/')
 def index():
     """Main page with game setup."""
-    return render_template('index.html')
+    total_questions = len(QUESTIONS)
+    return render_template('index.html', total_questions=total_questions)
 
 @app.route('/api/start', methods=['POST'])
 def start_game():
