@@ -73,6 +73,9 @@ def index():
 @app.route('/api/start', methods=['POST'])
 def start_game():
     """Start a new game session."""
+    # Clear any existing session data first
+    session.clear()
+    
     data = request.json
     num_questions = min(data.get('numQuestions', 10), len(QUESTIONS))
     category = data.get('category', 'all')
@@ -93,12 +96,13 @@ def start_game():
     # Select random questions
     selected_questions = random.sample(available_questions, num_questions)
     
-    # Initialize session
+    # Initialize session with explicit modification flag
     session['questions'] = selected_questions
     session['current_index'] = 0
     session['score'] = 0
     session['answers'] = []
     session['start_time'] = datetime.now().isoformat()
+    session.modified = True
     
     return jsonify({
         'success': True, 
@@ -214,6 +218,7 @@ def get_results():
 def reset_game():
     """Reset the game session."""
     session.clear()
+    session.modified = True
     return jsonify({'success': True})
 
 if __name__ == '__main__':
