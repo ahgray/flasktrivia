@@ -2862,21 +2862,5 @@
     "correctAnswer": 0,
     "explanation": "Nitrogen is the most abundant gas in Earth's atmosphere, constituting about 78% of it. Oxygen comes second, making up about 21%, while the other gases, including carbon dioxide and methane, make up the remaining 1%.",
     "funFact": "Despite its abundance, nitrogen is not the most essential for human survival—that would be oxygen, which we need for respiration!"
-  },
-  {
-    "id": "generated_1749551932_6556",
-    "category": "history",
-    "subcategory": "History",
-    "difficulty": "medium",
-    "question": "Who was the President of the United States during the signing of the Emancipation Proclamation?",
-    "options": [
-      "Abraham Lincoln",
-      "George Washington",
-      "Thomas Jefferson",
-      "Andrew Johnson"
-    ],
-    "correctAnswer": 0,
-    "explanation": "The Emancipation Proclamation, which declared that all slaves in Confederate-held territory were to be set free, was signed by President Abraham Lincoln on January 1, 1863, during the American Civil War. This was a significant step towards the abolition of slavery in the United States.",
-    "funFact": "Even though the Emancipation Proclamation declared slaves in Confederate territory to be free, it did not actually free any slaves immediately. It wasn't until the passage of the 13th Amendment to the Constitution in 1865 that slavery was officially abolished in the U.S."
   }
 ]
