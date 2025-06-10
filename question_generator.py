@@ -46,7 +46,7 @@ class QuestionGenerator:
         Returns:
             Tuple of (is_valid, error_message)
         """
-        required_fields = ['question', 'options', 'correctAnswer', 'explanation']
+        required_fields = ['question', 'options', 'correctAnswer', 'explanation', 'broadCategory', 'subcategory']
         
         for field in required_fields:
             if field not in data:
@@ -64,11 +64,19 @@ class QuestionGenerator:
         if not isinstance(data['explanation'], str) or not data['explanation'].strip():
             return False, "Explanation must be a non-empty string"
         
+        # Validate broad category
+        valid_categories = ['stem', 'history', 'arts', 'sports', 'geography', 'general']
+        if not isinstance(data['broadCategory'], str) or data['broadCategory'].lower() not in valid_categories:
+            return False, f"broadCategory must be one of: {', '.join(valid_categories)}"
+        
+        if not isinstance(data['subcategory'], str) or not data['subcategory'].strip():
+            return False, "subcategory must be a non-empty string"
+        
         return True, "Valid"
     
-    def create_prompt(self, category: str) -> str:
+    def create_prompt(self, user_category: str) -> str:
         """Create the prompt for OpenAI API."""
-        return f"""Generate a trivia question for the category: {category}
+        return f"""Generate a trivia question for the topic: {user_category}
 
 Return ONLY valid JSON in this exact format:
 {{
@@ -76,7 +84,9 @@ Return ONLY valid JSON in this exact format:
     "options": ["Correct answer", "Wrong answer 1", "Wrong answer 2", "Wrong answer 3"],
     "correctAnswer": 0,
     "explanation": "Why this answer is correct and interesting context",
-    "funFact": "An interesting related fact"
+    "funFact": "An interesting related fact",
+    "broadCategory": "One of: stem, history, arts, sports, geography, general",
+    "subcategory": "More specific category like 'Ancient Rome' or 'Computer Science'"
 }}
 
 Requirements:
@@ -86,8 +96,10 @@ Requirements:
 - Place the correct answer at index 0
 - Explanation should be educational and engaging
 - Fun fact should be genuinely interesting
+- broadCategory must be one of: stem, history, arts, sports, geography, general
+- subcategory should be more specific (e.g., if broadCategory is "stem", subcategory could be "Physics" or "Computer Science")
 - Ensure proper JSON formatting
-- Category: {category}"""
+- Topic: {user_category}"""
     
     def call_openai_api(self, category: str) -> str:
         """
@@ -122,21 +134,21 @@ Requirements:
         except Exception as e:
             raise Exception(f"OpenAI API error: {str(e)}")
     
-    def format_question_for_storage(self, question_data: Dict, category: str) -> Dict:
+    def format_question_for_storage(self, question_data: Dict, user_category: str) -> Dict:
         """
         Format the generated question for storage in questions.json.
         
         Args:
             question_data: Raw question data from API
-            category: Question category
+            user_category: Original user input category (for reference)
             
         Returns:
             Formatted question dictionary
         """
         return {
             "id": self.generate_unique_id(),
-            "category": category.lower(),
-            "subcategory": category,
+            "category": question_data['broadCategory'].lower(),
+            "subcategory": question_data['subcategory'],
             "difficulty": "medium",
             "question": question_data['question'],
             "options": question_data['options'],
@@ -250,7 +262,8 @@ def main():
             
             # Display the generated question
             print("\n✅ Generated Question:")
-            print(f"Category: {question['category']}")
+            print(f"Broad Category: {question['category']}")
+            print(f"Subcategory: {question['subcategory']}")
             print(f"Question: {question['question']}")
             print("\nOptions:")
             for i, option in enumerate(question['options']):

@@ -518,8 +518,7 @@
                     <label for="category">Select Category</label>
                     <select id="category" class="form-select">
                         <option value="all">All Categories</option>
-                        <option value="stem">STEM</option>
-                        <option value="history">History</option>
+                        <!-- Categories will be populated dynamically -->
                     </select>
                 </div>
                 <div class="form-group">
@@ -606,7 +605,7 @@
             answered: false
         };
 
-        // Initialize slider functionality
+        // Initialize slider functionality and load categories
         document.addEventListener('DOMContentLoaded', function() {
             const slider = document.getElementById('numQuestions');
             const display = document.getElementById('questionCount');
@@ -614,7 +613,56 @@
             slider.addEventListener('input', function() {
                 display.textContent = this.value;
             });
+            
+            // Load available categories on page load
+            loadAvailableCategories();
         });
+
+        async function loadAvailableCategories() {
+            try {
+                const response = await fetch('/api/categories');
+                const data = await response.json();
+                if (response.ok && data.categories) {
+                    updateCategoryDropdown(data.categories);
+                }
+            } catch (error) {
+                console.error('Failed to load categories:', error);
+                // Fallback to default categories
+                updateCategoryDropdown(['stem', 'history']);
+            }
+        }
+
+        function updateCategoryDropdown(categories) {
+            const categorySelect = document.getElementById('category');
+            const currentValue = categorySelect.value;
+            
+            // Clear existing options except "All Categories"
+            categorySelect.innerHTML = '<option value="all">All Categories</option>';
+            
+            // Add available categories with proper capitalization
+            const categoryDisplayNames = {
+                'stem': 'STEM',
+                'history': 'History',
+                'arts': 'Arts',
+                'sports': 'Sports',
+                'geography': 'Geography',
+                'general': 'General'
+            };
+            
+            categories.sort().forEach(category => {
+                if (category && category !== 'all') {
+                    const option = document.createElement('option');
+                    option.value = category;
+                    option.textContent = categoryDisplayNames[category] || category.charAt(0).toUpperCase() + category.slice(1);
+                    categorySelect.appendChild(option);
+                }
+            });
+            
+            // Restore previous selection if it still exists
+            if (currentValue && [...categorySelect.options].some(opt => opt.value === currentValue)) {
+                categorySelect.value = currentValue;
+            }
+        }
 
         function showScreen(screenId) {
             document.querySelectorAll('.screen').forEach(screen => {
@@ -639,6 +687,10 @@
                 const data = await response.json();
                 
                 if (response.ok) {
+                    // Update categories dropdown if new categories are available
+                    if (data.categories) {
+                        updateCategoryDropdown(data.categories);
+                    }
                     showScreen('gameScreen');
                     loadQuestion();
                 } else {
@@ -855,6 +907,9 @@
                     showGeneratedQuestion(data.generated_question, category);
                     categoryInput.value = '';
                     
+                    // Refresh the category dropdown to include any new categories
+                    loadAvailableCategories();
+                    
                     // Disable the form for this game session
                     generateBtn.disabled = true;
                     categoryInput.disabled = true;
@@ -891,6 +946,11 @@
                 <div style="margin-top: 20px; padding: 20px; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 15px;">
                     <h4 style="color: #2e7d32; margin-bottom: 15px;">✅ Successfully Generated ${category} Question!</h4>
                     <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                        <div style="margin-bottom: 15px;">
+                            <strong style="color: #333;">Category:</strong> <span style="color: #667eea;">${questionData.category || 'general'}</span> 
+                            <span style="color: #999;"> > </span> 
+                            <span style="color: #764ba2;">${questionData.subcategory || category}</span>
+                        </div>
                         <strong style="display: block; margin-bottom: 10px; color: #333;">Question:</strong>
                         <p style="margin-bottom: 15px; font-size: 1.1em;">${questionData.question}</p>
                         

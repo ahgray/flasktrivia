@@ -2942,5 +2942,101 @@
     "correctAnswer": 0,
     "explanation": "Robert Downey Jr. portrayed the character Tony Stark (also known as Iron Man) in the Marvel Cinematic Universe. His first appearance as the character was in 'Iron Man' (2008), and he reprised the role in multiple films across the franchise. Downey's portrayal of Tony Stark has been critically acclaimed, and he is often credited with helping to establish the success of the MCU.",
     "funFact": "Robert Downey Jr. was paid only $500,000 for his role in the first Iron Man movie, but for his later reprisal of Tony Stark in Avengers: Endgame, he earned around $75 million."
+  },
+  {
+    "id": "generated_1749555374_5018",
+    "category": "stem",
+    "subcategory": "Space Exploration",
+    "difficulty": "medium",
+    "question": "Who was the first woman to walk in space?",
+    "options": [
+      "Valentina Tereshkova",
+      "Sally Ride",
+      "Kalpana Chawla",
+      "Peggy Whitson"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Valentina Tereshkova is the first woman to have flown in space, not just walked. She was selected from more than four hundred applicants and five finalists to pilot Vostok 6 on 16 June 1963, becoming both the first woman and the first civilian to fly in space.",
+    "funFact": "Tereshkova has orbited Earth 48 times, spending almost three days in space. She holds several records to this day."
+  },
+  {
+    "id": "generated_1749555433_9844",
+    "category": "arts",
+    "subcategory": "Renaissance Art",
+    "difficulty": "medium",
+    "question": "Who painted the iconic work, 'The Last Supper', during the Renaissance period?",
+    "options": [
+      "Leonardo da Vinci",
+      "Raphael",
+      "Michelangelo",
+      "Titian"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Leonardo da Vinci, one of the leading artists of the High Renaissance, painted 'The Last Supper' at the end of the 15th century. The work is famous for its dramatic use of perspective and for its portrayal of the moment that Jesus announces that one of his disciples will betray him.",
+    "funFact": "'The Last Supper' has been restored multiple times due to the experimental technique Leonardo used, which resulted in a fragile and unstable painting. Despite this, it remains one of the most revered and studied artworks in history."
+  },
+  {
+    "id": "generated_1749555543_5313",
+    "category": "stem",
+    "subcategory": "Mathematics",
+    "difficulty": "medium",
+    "question": "What is the quadratic formula for the equation ax^2 + bx + c = 0?",
+    "options": [
+      "(-b±sqrt(b^2-4ac))/2a",
+      "(-b±sqrt(b^2+4ac))/2a",
+      "(b±sqrt(b^2-4ac))/2a",
+      "(b±sqrt(b^2+4ac))/2a"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The quadratic formula is used in algebra to solve quadratic equations (polynomials of the second degree). The general form of a quadratic equation is ax^2 + bx + c = 0, where x represents an unknown, and a, b, and c represent known numbers. The quadratic formula is (-b±sqrt(b^2-4ac))/2a. It is derived from the process of completing the square, and is widely used because it covers all possible cases.",
+    "funFact": "The quadratic formula and its proof can be found in ancient Indian mathematics, during the time period of 200 BC to 400 AD. This was used for finding the two roots of a quadratic equation."
+  },
+  {
+    "id": "generated_1749555579_6643",
+    "category": "history",
+    "subcategory": "Ancient Egypt",
+    "difficulty": "medium",
+    "question": "Which ancient civilization is known for using hieroglyphics?",
+    "options": [
+      "Ancient Egyptians",
+      "Ancient Greeks",
+      "Ancient Romans",
+      "Ancient Chinese"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hieroglyphics is a system of writing using symbols and pictures to represent words, sounds and concepts. It was used by the ancient Egyptians from approximately 3200 BC to 400 AD. Greek and Roman civilizations used alphabetic scripts, while ancient Chinese used logographic scripts.",
+    "funFact": "The Rosetta Stone, discovered in 1799, was instrumental in understanding Egyptian hieroglyphics. It contained the same text in three different scripts: Greek, Demotic, and hieroglyphic, allowing scholars to decode the previously unreadable script."
+  },
+  {
+    "id": "generated_1749555811_7795",
+    "category": "stem",
+    "subcategory": "Marine Biology",
+    "difficulty": "medium",
+    "question": "What is the largest species of shark currently in existence?",
+    "options": [
+      "Whale shark",
+      "Great white shark",
+      "Tiger shark",
+      "Hammerhead shark"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Whale shark holds the title for largest shark species, and is also the largest fish in the sea. They can grow up to 40 feet (12 meters) long, but on average, they grow to 18 to 32.8 feet (5.5 to 10 m) long. Unlike most sharks, they are filter feeders and primarily eat plankton.",
+    "funFact": "Whale sharks have about 3,000 tiny teeth, but they don't use these teeth to eat!"
+  },
+  {
+    "id": "generated_1749555852_1415",
+    "category": "sports",
+    "subcategory": "Tennis",
+    "difficulty": "medium",
+    "question": "Who holds the record for the most Grand Slam titles in men's singles tennis?",
+    "options": [
+      "Roger Federer",
+      "Rafael Nadal",
+      "Novak Djokovic",
+      "Pete Sampras"
+    ],
+    "correctAnswer": 0,
+    "explanation": "As of 2021, Roger Federer, Rafael Nadal, and Novak Djokovic share the record for the most Grand Slam singles titles in men's tennis, with 20 each. Pete Sampras, who held the record until 2009, won 14 Grand Slam titles.",
+    "funFact": "Margaret Court holds the overall record for the most Grand Slam singles titles, with 24."
   }
 ]

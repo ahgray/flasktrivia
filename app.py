@@ -261,6 +261,14 @@ def reset_game():
     session.modified = True
     return jsonify({'success': True})
 
+@app.route('/api/categories')
+def get_categories():
+    """Get available categories and difficulties."""
+    return jsonify({
+        'categories': list(set(q.get('category', 'general') for q in QUESTIONS)),
+        'difficulties': list(set(q.get('difficulty', 'medium') for q in QUESTIONS))
+    })
+
 
 @app.route('/api/generate-question', methods=['POST'])
 def generate_question():
@@ -306,7 +314,9 @@ def generate_question():
                 'options': new_question['options'],
                 'correctAnswer': new_question['correctAnswer'],
                 'explanation': new_question['explanation'],
-                'funFact': new_question.get('funFact', '')
+                'funFact': new_question.get('funFact', ''),
+                'category': new_question['category'],
+                'subcategory': new_question['subcategory']
             }
         })
         
