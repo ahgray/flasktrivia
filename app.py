@@ -309,7 +309,8 @@ Requirements:
 - Category: {category}"""
 
     try:
-        client = openai.OpenAI()
+        from openai import OpenAI
+        client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
