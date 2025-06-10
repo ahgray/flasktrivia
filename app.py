@@ -12,7 +12,6 @@ app = Flask(__name__)
 app.secret_key = 'your-secret-key-here'  # Change this in production
 
 # OpenAI configuration
-openai.api_key = os.getenv('OPENAI_API_KEY')
 LLM_MODEL = os.getenv('LLM_MODEL', 'gpt-4')
 GENERATION_ENABLED = os.getenv('GENERATION_ENABLED', 'true').lower() == 'true'
 
@@ -310,7 +309,7 @@ Requirements:
 - Category: {category}"""
 
     try:
-        client = openai.OpenAI(api_key=openai.api_key)
+        client = openai.OpenAI()
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
@@ -368,7 +367,7 @@ def generate_question():
     if not GENERATION_ENABLED:
         return jsonify({'error': 'Question generation is currently disabled'}), 503
     
-    if not openai.api_key:
+    if not os.getenv('OPENAI_API_KEY'):
         return jsonify({'error': 'OpenAI API key not configured'}), 500
     
     data = request.json
