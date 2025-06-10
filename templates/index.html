@@ -592,9 +592,20 @@
         }
 
         async function resetGame() {
-            await fetch('/api/reset', { method: 'POST' });
-            document.getElementById('currentScore').textContent = '0';
-            showScreen('setupScreen');
+            try {
+                await fetch('/api/reset', { method: 'POST' });
+                // Reset frontend state completely
+                currentGame = {
+                    selectedAnswer: null,
+                    answered: false
+                };
+                document.getElementById('currentScore').textContent = '0';
+                document.getElementById('currentQuestion').textContent = '1';
+                document.getElementById('totalQuestions').textContent = '10';
+                showScreen('setupScreen');
+            } catch (error) {
+                alert('Error resetting game. Please try again.');
+            }
         }
     </script>
 </body>

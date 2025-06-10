@@ -77,16 +77,22 @@ def start_game():
     session.clear()
     
     data = request.json
+    print(f"DEBUG: Received start request with data: {data}")
+    
     num_questions = min(data.get('numQuestions', 10), len(QUESTIONS))
     category = data.get('category', 'all')
     difficulty = data.get('difficulty', 'all')
     
+    print(f"DEBUG: Processing - num_questions={num_questions}, category={category}, difficulty={difficulty}")
+    
     # Filter questions based on category and difficulty if specified
-    available_questions = QUESTIONS
+    available_questions = QUESTIONS[:]  # Make a copy to avoid modifying original
     if category != 'all':
         available_questions = [q for q in available_questions if q.get('category', '').lower() == category.lower()]
     if difficulty != 'all':
         available_questions = [q for q in available_questions if q.get('difficulty', '').lower() == difficulty.lower()]
+    
+    print(f"DEBUG: After filtering - available_questions={len(available_questions)}")
     
     # Make sure we have enough questions
     num_questions = min(num_questions, len(available_questions))
@@ -96,18 +102,21 @@ def start_game():
     # Select random questions
     selected_questions = random.sample(available_questions, num_questions)
     
+    print(f"DEBUG: Selected {len(selected_questions)} questions")
+    
     # Initialize session with explicit modification flag
     session['questions'] = selected_questions
     session['current_index'] = 0
     session['score'] = 0
     session['answers'] = []
     session['start_time'] = datetime.now().isoformat()
-    session['total_questions'] = len(selected_questions)  # Store this separately for safety
     session.modified = True
+    
+    print(f"DEBUG: Session initialized - questions={len(session['questions'])}, current_index={session['current_index']}")
     
     return jsonify({
         'success': True, 
-        'totalQuestions': num_questions,
+        'totalQuestions': len(selected_questions),
         'categories': list(set(q.get('category', 'general') for q in QUESTIONS)),
         'difficulties': list(set(q.get('difficulty', 'medium') for q in QUESTIONS))
     })
@@ -115,15 +124,19 @@ def start_game():
 @app.route('/api/question')
 def get_question():
     """Get the current question."""
-    if 'questions' not in session or 'total_questions' not in session:
+    if 'questions' not in session:
         return jsonify({'error': 'No active game'}), 400
     
-    # Use stored total_questions for consistency
-    total_questions = session['total_questions']
-    if session['current_index'] >= total_questions:
+    current_index = session['current_index']
+    questions = session['questions']
+    
+    print(f"DEBUG QUESTION: current_index={current_index}, total_questions={len(questions)}")
+    
+    if current_index >= len(questions):
+        print(f"DEBUG QUESTION: No more questions - returning error")
         return jsonify({'error': 'No more questions'}), 400
     
-    question = session['questions'][session['current_index']]
+    question = questions[current_index]
     
     # Get question statistics
     with get_db() as conn:
@@ -143,7 +156,7 @@ def get_question():
         'question': question['question'],
         'options': question['options'],
         'questionNumber': session['current_index'] + 1,
-        'totalQuestions': total_questions,
+        'totalQuestions': len(questions),
         'category': question.get('category', 'General'),
         'subcategory': question.get('subcategory', ''),
         'difficulty': question.get('difficulty', 'medium'),
@@ -199,9 +212,12 @@ def submit_answer():
     session['current_index'] += 1
     session.modified = True
     
-    # Use the separately stored total_questions for reliability
-    total_questions = session.get('total_questions', len(session.get('questions', [])))
-    is_last = session['current_index'] >= total_questions
+    # Check if this was the last question
+    current_index = session['current_index']
+    total_questions = len(session['questions'])
+    is_last = current_index >= total_questions
+    
+    print(f"DEBUG ANSWER: after increment - current_index={current_index}, total_questions={total_questions}, is_last={is_last}")
     
     return jsonify({
         'correct': is_correct,
@@ -213,10 +229,10 @@ def submit_answer():
 @app.route('/api/results')
 def get_results():
     """Get game results."""
-    if 'questions' not in session or 'answers' not in session or 'total_questions' not in session:
+    if 'questions' not in session or 'answers' not in session:
         return jsonify({'error': 'No completed game'}), 400
     
-    total_questions = session['total_questions']
+    total_questions = len(session['questions'])
     return jsonify({
         'score': session['score'],
         'totalQuestions': total_questions,
@@ -228,6 +244,7 @@ def get_results():
 @app.route('/api/reset', methods=['POST'])
 def reset_game():
     """Reset the game session."""
+    print(f"DEBUG RESET: Session cleared")
     session.clear()
     session.modified = True
     return jsonify({'success': True})
