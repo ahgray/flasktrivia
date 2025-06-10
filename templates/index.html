@@ -801,6 +801,20 @@
                 document.getElementById('currentScore').textContent = '0';
                 document.getElementById('currentQuestion').textContent = '1';
                 document.getElementById('totalQuestions').textContent = '10';
+                
+                // Reset question generator form
+                const categoryInput = document.getElementById('newCategory');
+                const generateBtn = document.getElementById('generateBtn');
+                const generateBtnText = document.getElementById('generateBtnText');
+                const feedback = document.getElementById('generatorFeedback');
+                
+                categoryInput.disabled = false;
+                categoryInput.value = '';
+                generateBtn.disabled = false;
+                generateBtnText.textContent = 'Generate Question';
+                feedback.style.display = 'none';
+                feedback.innerHTML = '';
+                
                 showScreen('setupScreen');
             } catch (error) {
                 alert('Error resetting game. Please try again.');
@@ -837,19 +851,81 @@
                 const data = await response.json();
                 
                 if (response.ok) {
-                    showGeneratorFeedback(`✅ Success! Generated a new ${category} question. It will appear in future games!`, 'success');
+                    // Show success message and generated question details
+                    showGeneratedQuestion(data.generated_question, category);
                     categoryInput.value = '';
+                    
+                    // Disable the form for this game session
+                    generateBtn.disabled = true;
+                    categoryInput.disabled = true;
+                    generateBtnText.textContent = 'Question Generated';
+                    
                 } else {
+                    if (response.status === 429) {
+                        // User already generated a question this game
+                        generateBtn.disabled = true;
+                        categoryInput.disabled = true;
+                        generateBtnText.textContent = 'Already Generated';
+                    }
                     showGeneratorFeedback(`❌ ${data.error || 'Failed to generate question. Please try again.'}`, 'error');
                 }
             } catch (error) {
                 showGeneratorFeedback('❌ Network error. Please check your connection and try again.', 'error');
             } finally {
-                // Reset button state
-                generateBtn.disabled = false;
-                generateBtnText.style.display = 'inline';
-                generateLoading.style.display = 'none';
+                // Reset loading state only if button isn't permanently disabled
+                if (!generateBtn.disabled) {
+                    generateBtnText.style.display = 'inline';
+                    generateLoading.style.display = 'none';
+                } else {
+                    generateLoading.style.display = 'none';
+                    generateBtnText.style.display = 'inline';
+                }
             }
+        }
+
+        function showGeneratedQuestion(questionData, category) {
+            const feedback = document.getElementById('generatorFeedback');
+            
+            // Create detailed question display
+            let questionHTML = `
+                <div style="margin-top: 20px; padding: 20px; background: #e8f5e9; border: 2px solid #4caf50; border-radius: 15px;">
+                    <h4 style="color: #2e7d32; margin-bottom: 15px;">✅ Successfully Generated ${category} Question!</h4>
+                    <div style="background: white; padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                        <strong style="display: block; margin-bottom: 10px; color: #333;">Question:</strong>
+                        <p style="margin-bottom: 15px; font-size: 1.1em;">${questionData.question}</p>
+                        
+                        <strong style="display: block; margin-bottom: 10px; color: #333;">Options:</strong>
+                        <ul style="margin-bottom: 15px; padding-left: 20px;">
+            `;
+            
+            questionData.options.forEach((option, index) => {
+                const isCorrect = index === questionData.correctAnswer;
+                questionHTML += `<li style="margin-bottom: 5px; ${isCorrect ? 'color: #4caf50; font-weight: bold;' : ''}">${option} ${isCorrect ? '✓' : ''}</li>`;
+            });
+            
+            questionHTML += `
+                        </ul>
+                        
+                        <strong style="display: block; margin-bottom: 10px; color: #333;">Explanation:</strong>
+                        <p style="margin-bottom: 10px; font-style: italic;">${questionData.explanation}</p>
+            `;
+            
+            if (questionData.funFact && questionData.funFact.trim()) {
+                questionHTML += `
+                    <strong style="display: block; margin-bottom: 10px; color: #333;">Fun Fact:</strong>
+                    <p style="margin-bottom: 10px; color: #666;">${questionData.funFact}</p>
+                `;
+            }
+            
+            questionHTML += `
+                    </div>
+                    <p style="text-align: center; color: #2e7d32; font-weight: bold;">This question will appear in future games!</p>
+                </div>
+            `;
+            
+            feedback.innerHTML = questionHTML;
+            feedback.className = 'success';
+            feedback.style.display = 'block';
         }
 
         function showGeneratorFeedback(message, type) {

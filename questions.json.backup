@@ -2862,5 +2862,69 @@
     "correctAnswer": 0,
     "explanation": "Nitrogen is the most abundant gas in Earth's atmosphere, constituting about 78% of it. Oxygen comes second, making up about 21%, while the other gases, including carbon dioxide and methane, make up the remaining 1%.",
     "funFact": "Despite its abundance, nitrogen is not the most essential for human survival—that would be oxygen, which we need for respiration!"
+  },
+  {
+    "id": "generated_1749551932_6556",
+    "category": "history",
+    "subcategory": "History",
+    "difficulty": "medium",
+    "question": "Who was the President of the United States during the signing of the Emancipation Proclamation?",
+    "options": [
+      "Abraham Lincoln",
+      "George Washington",
+      "Thomas Jefferson",
+      "Andrew Johnson"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Emancipation Proclamation, which declared that all slaves in Confederate-held territory were to be set free, was signed by President Abraham Lincoln on January 1, 1863, during the American Civil War. This was a significant step towards the abolition of slavery in the United States.",
+    "funFact": "Even though the Emancipation Proclamation declared slaves in Confederate territory to be free, it did not actually free any slaves immediately. It wasn't until the passage of the 13th Amendment to the Constitution in 1865 that slavery was officially abolished in the U.S."
+  },
+  {
+    "id": "generated_1749552996_4687",
+    "category": "geography",
+    "subcategory": "Geography",
+    "difficulty": "medium",
+    "question": "Which river is the longest in the world?",
+    "options": [
+      "Nile River",
+      "Amazon River",
+      "Yangtze River",
+      "Mississippi River"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Nile River, located in Africa, is the longest river in the world, with a length of about 4,135 miles (6,650 kilometers). It flows through eleven countries and has two main tributaries: the White Nile and the Blue Nile, with the former being the longer of the two.",
+    "funFact": "The Nile River was extremely important to the ancient Egyptian civilization, as it provided them with food, water, transportation, and even helped in the creation of their calendar system."
+  },
+  {
+    "id": "generated_1749553309_7338",
+    "category": "local llms",
+    "subcategory": "Local LLMs",
+    "difficulty": "medium",
+    "question": "Which university is well-known for offering the first LLM in Indigenous Peoples Law and Policy in the United States?",
+    "options": [
+      "University of Arizona",
+      "Harvard University",
+      "Yale University",
+      "Stanford University"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The University of Arizona is known for its unique LLM program in Indigenous Peoples Law and Policy. This program is designed for those who have a strong interest in Indigenous rights, policy, and social justice. It is the first of its kind in the United States, reflecting the university's commitment to Indigenous legal education.",
+    "funFact": "Did you know that 'LLM' stands for 'Legum Magister' in Latin, which translates to 'Master of Laws' in English? This is a postgraduate law degree recognized worldwide."
+  },
+  {
+    "id": "generated_1749553363_9160",
+    "category": "large language models",
+    "subcategory": "Large Language Models",
+    "difficulty": "medium",
+    "question": "What type of model is GPT-3, a large language model developed by OpenAI?",
+    "options": [
+      "Transformer-based model",
+      "Convolutional Neural Network",
+      "Recurrent Neural Network",
+      "Support Vector Machine"
+    ],
+    "correctAnswer": 0,
+    "explanation": "GPT-3, which stands for Generative Pretrained Transformer 3, is a transformer-based model. This type of model uses self-attention mechanisms and has been found particularly effective for a range of natural language processing tasks. Unlike Convolutional Neural Networks and Recurrent Neural Networks which are typically used for image processing and sequence data respectively, transformer models are better at understanding the context of language.",
+    "funFact": "GPT-3, with its 175 billion machine learning parameters, is one of the largest and most powerful language models to date!"
   }
 ]

@@ -110,6 +110,7 @@ def start_game():
     session['score'] = 0
     session['answers'] = []
     session['start_time'] = datetime.now().isoformat()
+    session['question_generated'] = False  # Reset question generation flag
     session.modified = True
     
     # Debug log to confirm proper initialization
@@ -277,11 +278,19 @@ def generate_question():
         return jsonify({'error': 'Category is required'}), 400
     
     try:
+        # Check if user already generated a question in this session
+        if session.get('question_generated', False):
+            return jsonify({'error': 'You have already generated a question for this game. Please play again to generate another!'}), 429
+        
         # Generate question using the module
         new_question = question_generator.generate_question(category)
         
         # Save to our questions file
         question_generator.save_question(new_question)
+        
+        # Mark that user has generated a question this session
+        session['question_generated'] = True
+        session.modified = True
         
         # Reload questions to include the new one
         global QUESTIONS
@@ -291,7 +300,14 @@ def generate_question():
             'success': True,
             'message': f'Successfully generated question for category: {category}',
             'question_id': new_question['id'],
-            'total_questions': len(QUESTIONS)
+            'total_questions': len(QUESTIONS),
+            'generated_question': {
+                'question': new_question['question'],
+                'options': new_question['options'],
+                'correctAnswer': new_question['correctAnswer'],
+                'explanation': new_question['explanation'],
+                'funFact': new_question.get('funFact', '')
+            }
         })
         
     except ValueError as e:
