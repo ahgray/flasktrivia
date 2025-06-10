@@ -5,15 +5,16 @@ from flask import Flask, render_template, request, jsonify, session
 from datetime import datetime
 import random
 from pathlib import Path
-import openai
-import time
+from question_generator import QuestionGenerator
 
 app = Flask(__name__)
 app.secret_key = 'your-secret-key-here'  # Change this in production
 
-# OpenAI configuration
-LLM_MODEL = os.getenv('LLM_MODEL', 'gpt-4')
+# Question generation configuration
 GENERATION_ENABLED = os.getenv('GENERATION_ENABLED', 'true').lower() == 'true'
+question_generator = None
+if GENERATION_ENABLED and os.getenv('OPENAI_API_KEY'):
+    question_generator = QuestionGenerator(model=os.getenv('LLM_MODEL', 'gpt-4'))
 
 # Database setup
 DATABASE = 'trivia.db'
@@ -259,108 +260,6 @@ def reset_game():
     session.modified = True
     return jsonify({'success': True})
 
-def generate_unique_id():
-    """Generate a unique ID for new questions."""
-    return f"generated_{int(time.time())}_{random.randint(1000, 9999)}"
-
-def validate_question_data(data):
-    """Validate the structure of generated question data."""
-    required_fields = ['question', 'options', 'correctAnswer', 'explanation']
-    
-    for field in required_fields:
-        if field not in data:
-            return False, f"Missing required field: {field}"
-    
-    if not isinstance(data['options'], list) or len(data['options']) != 4:
-        return False, "Options must be a list of exactly 4 items"
-    
-    if not isinstance(data['correctAnswer'], int) or data['correctAnswer'] < 0 or data['correctAnswer'] > 3:
-        return False, "correctAnswer must be an integer between 0 and 3"
-    
-    if not isinstance(data['question'], str) or not data['question'].strip():
-        return False, "Question must be a non-empty string"
-    
-    if not isinstance(data['explanation'], str) or not data['explanation'].strip():
-        return False, "Explanation must be a non-empty string"
-    
-    return True, "Valid"
-
-def call_openai_api(category):
-    """Call OpenAI API to generate a trivia question."""
-    prompt = f"""Generate a trivia question for the category: {category}
-
-Return ONLY valid JSON in this exact format:
-{{
-    "question": "Your question here?",
-    "options": ["Correct answer", "Wrong answer 1", "Wrong answer 2", "Wrong answer 3"],
-    "correctAnswer": 0,
-    "explanation": "Why this answer is correct and interesting context",
-    "funFact": "An interesting related fact"
-}}
-
-Requirements:
-- Question should be factual and verifiable
-- Difficulty should be medium level (not too easy, not too obscure)
-- Options should be plausible but clearly distinct
-- Place the correct answer at index 0
-- Explanation should be educational and engaging
-- Fun fact should be genuinely interesting
-- Ensure proper JSON formatting
-- Category: {category}"""
-
-    try:
-        from openai import OpenAI
-        client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-        response = client.chat.completions.create(
-            model=LLM_MODEL,
-            messages=[
-                {"role": "system", "content": "You are a trivia question generator. Always respond with valid JSON only."},
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=500,
-            temperature=0.7
-        )
-        
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        raise Exception(f"OpenAI API error: {str(e)}")
-
-def add_question_to_database(question_data, category):
-    """Add a new question to the questions.json file."""
-    global QUESTIONS
-    
-    # Create the new question object
-    new_question = {
-        "id": generate_unique_id(),
-        "category": category.lower(),
-        "subcategory": category,
-        "difficulty": "medium",
-        "question": question_data['question'],
-        "options": question_data['options'],
-        "correctAnswer": question_data['correctAnswer'],
-        "explanation": question_data['explanation'],
-        "funFact": question_data.get('funFact', '')
-    }
-    
-    # Add to questions list
-    QUESTIONS.append(new_question)
-    
-    # Save to file
-    questions_file = Path('questions.json')
-    
-    # Create backup first
-    backup_file = Path('questions_backup.json')
-    if questions_file.exists():
-        with open(questions_file, 'r', encoding='utf-8') as f:
-            backup_data = f.read()
-        with open(backup_file, 'w', encoding='utf-8') as f:
-            f.write(backup_data)
-    
-    # Write updated questions
-    with open(questions_file, 'w', encoding='utf-8') as f:
-        json.dump(QUESTIONS, f, indent=2, ensure_ascii=False)
-    
-    return new_question
 
 @app.route('/api/generate-question', methods=['POST'])
 def generate_question():
@@ -368,8 +267,8 @@ def generate_question():
     if not GENERATION_ENABLED:
         return jsonify({'error': 'Question generation is currently disabled'}), 503
     
-    if not os.getenv('OPENAI_API_KEY'):
-        return jsonify({'error': 'OpenAI API key not configured'}), 500
+    if not question_generator:
+        return jsonify({'error': 'Question generator not initialized. Please check API key configuration.'}), 500
     
     data = request.json
     category = data.get('category', '').strip()
@@ -377,26 +276,16 @@ def generate_question():
     if not category:
         return jsonify({'error': 'Category is required'}), 400
     
-    if len(category) > 50:
-        return jsonify({'error': 'Category name too long (max 50 characters)'}), 400
-    
     try:
-        # Call OpenAI API
-        response_text = call_openai_api(category)
+        # Generate question using the module
+        new_question = question_generator.generate_question(category)
         
-        # Parse JSON response
-        try:
-            question_data = json.loads(response_text)
-        except json.JSONDecodeError as e:
-            return jsonify({'error': f'Invalid JSON response from AI: {str(e)}'}), 500
+        # Save to our questions file
+        question_generator.save_question(new_question)
         
-        # Validate question data
-        is_valid, error_msg = validate_question_data(question_data)
-        if not is_valid:
-            return jsonify({'error': f'Invalid question format: {error_msg}'}), 500
-        
-        # Add to database
-        new_question = add_question_to_database(question_data, category)
+        # Reload questions to include the new one
+        global QUESTIONS
+        QUESTIONS = load_questions()
         
         return jsonify({
             'success': True,
@@ -405,6 +294,8 @@ def generate_question():
             'total_questions': len(QUESTIONS)
         })
         
+    except ValueError as e:
+        return jsonify({'error': str(e)}), 400
     except Exception as e:
         return jsonify({'error': f'Failed to generate question: {str(e)}'}), 500
 

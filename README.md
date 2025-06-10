@@ -257,8 +257,48 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Modern CSS for the beautiful UI
 - Your amazing trivia questions!
 
+## 🤖 AI Question Generation
+
+The app includes an AI-powered question generator that uses OpenAI's GPT model to create new trivia questions.
+
+### Web Interface
+After completing a game, users can generate new questions by:
+1. Entering a category on the results screen
+2. Clicking "Generate Question"
+3. The AI will create a new question that's automatically added to the database
+
+### Command Line Interface
+The question generator can also be used standalone:
+
+```bash
+# Set your OpenAI API key
+export OPENAI_API_KEY='your-api-key-here'
+
+# Run the generator
+python question_generator.py
+
+# Follow the prompts to generate questions interactively
+```
+
+### Module Usage
+You can also import and use the generator in your own code:
+
+```python
+from question_generator import QuestionGenerator
+
+# Initialize generator
+generator = QuestionGenerator(api_key="your-key", model="gpt-4")
+
+# Generate a question
+question = generator.generate_question("Ancient History")
+
+# Save to questions.json
+generator.save_question(question)
+```
+
 ## 💡 Future Enhancements
 
+- [x] AI-powered question generation
 - [ ] User accounts and personal statistics
 - [ ] Leaderboards
 - [ ] Timer mode
