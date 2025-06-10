@@ -127,7 +127,20 @@ def get_question():
     if current_index >= len(questions):
         return jsonify({'error': 'No more questions'}), 400
     
-    question = questions[current_index]
+    question = questions[current_index].copy()  # Make a copy to avoid modifying original
+    
+    # Shuffle the options and track the new correct answer index
+    original_correct = question['correct']
+    options_with_indices = [(i, option) for i, option in enumerate(question['options'])]
+    random.shuffle(options_with_indices)
+    
+    # Update the question with shuffled options and new correct index
+    question['options'] = [option for _, option in options_with_indices]
+    question['correct'] = next(new_index for new_index, (orig_index, _) in enumerate(options_with_indices) if orig_index == original_correct)
+    
+    # Store the shuffled question back in session for answer checking
+    session['questions'][current_index] = question
+    session.modified = True
     
     # Get question statistics
     with get_db() as conn:
