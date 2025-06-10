@@ -104,6 +104,9 @@ def start_game():
     session['start_time'] = datetime.now().isoformat()
     session.modified = True
     
+    # Debug log to confirm proper initialization
+    print(f"INIT: Selected {len(selected_questions)} questions, session has {len(session.get('questions', []))}")
+    
     return jsonify({
         'success': True, 
         'totalQuestions': len(selected_questions),
@@ -203,6 +206,9 @@ def submit_answer():
     current_index = session['current_index']
     total_questions = len(session['questions'])
     is_last = current_index >= total_questions
+    
+    # Debug log for answer processing
+    print(f"ANSWER: index={current_index}/{total_questions}, isLast={is_last}")
     
     return jsonify({
         'correct': is_correct,
