@@ -549,6 +549,9 @@
                 if (data.isLastQuestion) {
                     document.getElementById('nextButton').textContent = 'View Results';
                     document.getElementById('nextButton').onclick = showResults;
+                } else {
+                    document.getElementById('nextButton').textContent = 'Next Question';
+                    document.getElementById('nextButton').onclick = nextQuestion;
                 }
                 document.getElementById('nextButton').style.display = 'block';
                 
