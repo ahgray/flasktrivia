@@ -142,6 +142,7 @@
 
         .slider {
             -webkit-appearance: none;
+            appearance: none;
             width: 100%;
             height: 8px;
             border-radius: 5px;
@@ -844,6 +845,10 @@
             const slider = document.getElementById('numQuestions');
             const display = document.getElementById('questionCount');
             
+            // Ensure slider starts at default value of 10
+            slider.value = 10;
+            display.textContent = '10';
+            
             slider.addEventListener('input', function() {
                 display.textContent = this.value;
             });
@@ -1404,6 +1409,12 @@
                 document.getElementById('currentScore').textContent = '0';
                 document.getElementById('currentQuestion').textContent = '1';
                 document.getElementById('totalQuestions').textContent = '10';
+                
+                // Reset the question slider to default value of 10
+                const slider = document.getElementById('numQuestions');
+                const display = document.getElementById('questionCount');
+                slider.value = 10;
+                display.textContent = '10';
                 
                 // Reset question generator form
                 const categoryInput = document.getElementById('newCategory');
