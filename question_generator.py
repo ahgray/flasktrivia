@@ -17,7 +17,7 @@ from openai import OpenAI
 class QuestionGenerator:
     """Handles trivia question generation using OpenAI API."""
     
-    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4"):
+    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4o-mini"):
         """
         Initialize the question generator.
         
