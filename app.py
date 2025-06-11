@@ -25,6 +25,18 @@ def get_db():
     conn.row_factory = sqlite3.Row
     return conn
 
+def ensure_tables_exist():
+    """Ensure all required tables exist in the database."""
+    with get_db() as conn:
+        # Check if leaderboard table exists
+        cursor = conn.execute("""
+            SELECT name FROM sqlite_master 
+            WHERE type='table' AND name='leaderboard'
+        """)
+        if not cursor.fetchone():
+            # Create missing tables
+            init_db()
+
 def init_db():
     """Initialize the database with required tables."""
     with get_db() as conn:
@@ -351,6 +363,9 @@ def get_results():
 @app.route('/api/submit-score', methods=['POST'])
 def submit_score():
     """Submit score to leaderboard."""
+    # Ensure tables exist before trying to insert
+    ensure_tables_exist()
+    
     if 'questions' not in session or 'answers' not in session:
         return jsonify({'error': 'No completed game'}), 400
     
@@ -397,6 +412,9 @@ def submit_score():
 @app.route('/api/leaderboard')
 def get_leaderboard():
     """Get leaderboard data with filtering options."""
+    # Ensure tables exist before querying
+    ensure_tables_exist()
+    
     category = request.args.get('category', 'all')
     difficulty = request.args.get('difficulty', 'all')
     limit = min(int(request.args.get('limit', 10)), 100)  # Max 100 entries
@@ -453,6 +471,9 @@ def get_leaderboard():
 @app.route('/api/player-stats/<player_name>')
 def get_player_stats(player_name):
     """Get detailed statistics for a specific player."""
+    # Ensure tables exist before querying
+    ensure_tables_exist()
+    
     try:
         with get_db() as conn:
             # Get game history
