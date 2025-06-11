@@ -26,10 +26,12 @@
             border-radius: 20px;
             padding: 40px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
+            max-width: 700px;
             width: 90%;
             transform: translateY(0);
             transition: all 0.3s ease;
+            max-height: 90vh;
+            overflow-y: auto;
         }
 
         .container:hover {
@@ -57,6 +59,35 @@
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .nav-tab {
+            background: none;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #666;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .nav-tab.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .nav-tab:hover {
+            color: #667eea;
         }
 
         .total-questions-info {
@@ -90,7 +121,7 @@
             color: #555;
         }
 
-        input[type="number"], .form-select {
+        input[type="number"], input[type="text"], .form-select {
             width: 100%;
             padding: 15px;
             border: 2px solid #e0e0e0;
@@ -99,7 +130,7 @@
             transition: all 0.3s ease;
         }
 
-        input[type="number"]:focus, .form-select:focus {
+        input[type="number"]:focus, input[type="text"]:focus, .form-select:focus {
             outline: none;
             border-color: #667eea;
             box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
@@ -193,6 +224,15 @@
 
         .btn:active {
             transform: translateY(0);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+            margin-left: 10px;
+        }
+
+        .btn-success {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
         }
 
         .question-header {
@@ -407,6 +447,132 @@
             to { transform: rotate(360deg); }
         }
 
+        /* Leaderboard Styles */
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .leaderboard-table th,
+        .leaderboard-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .leaderboard-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .leaderboard-table tbody tr:hover {
+            background: #f8f9ff;
+        }
+
+        .rank-cell {
+            text-align: center;
+            font-weight: 700;
+            color: #667eea;
+        }
+
+        .rank-1 { color: #ffd700; }
+        .rank-2 { color: #c0c0c0; }
+        .rank-3 { color: #cd7f32; }
+
+        .score-cell {
+            font-weight: 600;
+        }
+
+        .percentage-cell {
+            font-weight: 700;
+            color: #28a745;
+        }
+
+        .filters {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: end;
+        }
+
+        .filter-group {
+            flex: 1;
+        }
+
+        .filter-group label {
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .achievements-section {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .achievement {
+            background: #fff;
+            border: 2px solid #ffd700;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .achievement-icon {
+            font-size: 2em;
+            color: #ffd700;
+        }
+
+        .achievement-content h4 {
+            margin: 0 0 5px 0;
+            color: #333;
+        }
+
+        .achievement-content p {
+            margin: 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .score-submission {
+            background: #f0f4ff;
+            border: 2px solid #667eea;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .score-submission h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+        }
+
+        .empty-state h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Question Generator Styles */
         .question-generator {
             background: #f8f9fa;
             border: 2px solid #e9ecef;
@@ -499,103 +665,169 @@
     <div class="container">
         <h1>🎯 Modern Trivia Game</h1>
         
-        <!-- Setup Screen -->
-        <div id="setupScreen" class="screen active">
-            <div class="total-questions-info">
-                <p>🎯 <strong>{{ total_questions }}</strong> questions available in our database!</p>
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('game')">Play Game</button>
+            <button class="nav-tab" onclick="showTab('leaderboard')">Leaderboard</button>
+        </div>
+        
+        <!-- Game Tab Content -->
+        <div id="gameTab" class="tab-content">
+            <!-- Setup Screen -->
+            <div id="setupScreen" class="screen active">
+                <div class="total-questions-info">
+                    <p>🎯 <strong>{{ total_questions }}</strong> questions available in our database!</p>
+                </div>
+                <form class="setup-form" onsubmit="startGame(event)">
+                    <div class="form-group">
+                        <label for="numQuestions">How many questions would you like?</label>
+                        <div class="slider-container">
+                            <input type="range" id="numQuestions" min="1" max="50" value="10" class="slider">
+                            <div class="slider-value">
+                                <span id="questionCount">10</span> questions
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Select Category</label>
+                        <select id="category" class="form-select">
+                            <option value="all">All Categories</option>
+                            <!-- Categories will be populated dynamically -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="difficulty">Select Difficulty</label>
+                        <select id="difficulty" class="form-select">
+                            <option value="all">All Difficulties</option>
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Start Game</button>
+                </form>
             </div>
-            <form class="setup-form" onsubmit="startGame(event)">
-                <div class="form-group">
-                    <label for="numQuestions">How many questions would you like?</label>
-                    <div class="slider-container">
-                        <input type="range" id="numQuestions" min="1" max="50" value="10" class="slider">
-                        <div class="slider-value">
-                            <span id="questionCount">10</span> questions
+
+            <!-- Game Screen -->
+            <div id="gameScreen" class="screen">
+                <div class="question-header">
+                    <span class="question-number">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span></span>
+                    <span class="score">Score: <span id="currentScore">0</span></span>
+                </div>
+                
+                <div class="question-meta">
+                    <span class="category-badge" id="categoryBadge">Category</span>
+                    <span class="difficulty-badge" id="difficultyBadge">Difficulty</span>
+                </div>
+                
+                <div class="global-stats" id="globalStats">
+                    <div>Global Statistics</div>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <div class="stat-value" id="timesAnswered">0</div>
+                            <div class="stat-label">Times Answered</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" id="globalAccuracy">0%</div>
+                            <div class="stat-label">Global Accuracy</div>
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="category">Select Category</label>
-                    <select id="category" class="form-select">
+                
+                <div class="question-text" id="questionText"></div>
+                
+                <div class="options" id="optionsContainer"></div>
+                
+                <div id="feedbackContainer"></div>
+                
+                <button id="nextButton" class="btn next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="resultsScreen" class="screen">
+                <div class="results-summary">
+                    <h2>Game Complete! 🎉</h2>
+                    <div class="final-score" id="finalScore">0/0</div>
+                    <div class="percentage" id="finalPercentage">0%</div>
+                </div>
+                
+                <!-- Score Submission -->
+                <div class="score-submission">
+                    <h3>🏆 Submit Your Score to Leaderboard</h3>
+                    <p>Enter your name to save your score and compete with other players!</p>
+                    <div class="form-group">
+                        <input type="text" id="playerName" placeholder="Enter your name" maxlength="50" class="category-input">
+                        <button onclick="submitScore()" id="submitScoreBtn" class="btn btn-success">
+                            <span id="submitScoreText">Submit Score</span>
+                            <div id="submitScoreLoading" class="loading" style="display: none;"></div>
+                        </button>
+                    </div>
+                    <div id="scoreSubmissionFeedback"></div>
+                </div>
+                
+                <!-- Achievements Section -->
+                <div id="achievementsSection" class="achievements-section" style="display: none;">
+                    <h3>🏆 New Achievements Unlocked!</h3>
+                    <div id="achievementsList"></div>
+                </div>
+                
+                <div id="answersReview"></div>
+                
+                <!-- Question Generator Section -->
+                <div class="question-generator">
+                    <h3>🤖 Generate a New Question</h3>
+                    <p>Help expand our database! Enter a category and we'll generate a new question using AI.</p>
+                    <div class="generator-form">
+                        <div class="form-group">
+                            <input type="text" id="newCategory" class="category-input" placeholder="e.g., Science, History, Sports, Geography">
+                            <button onclick="generateQuestion()" id="generateBtn" class="btn generate-btn">
+                                <span id="generateBtnText">Generate Question</span>
+                                <div id="generateLoading" class="loading" style="display: none;"></div>
+                            </button>
+                        </div>
+                        <div id="generatorFeedback"></div>
+                    </div>
+                </div>
+                
+                <button class="btn" onclick="resetGame()">Play Again</button>
+            </div>
+        </div>
+        
+        <!-- Leaderboard Tab Content -->
+        <div id="leaderboardTab" class="tab-content" style="display: none;">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="leaderboardCategory">Category</label>
+                    <select id="leaderboardCategory" class="form-select" onchange="loadLeaderboard()">
                         <option value="all">All Categories</option>
-                        <!-- Categories will be populated dynamically -->
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="difficulty">Select Difficulty</label>
-                    <select id="difficulty" class="form-select">
+                <div class="filter-group">
+                    <label for="leaderboardDifficulty">Difficulty</label>
+                    <select id="leaderboardDifficulty" class="form-select" onchange="loadLeaderboard()">
                         <option value="all">All Difficulties</option>
                         <option value="easy">Easy</option>
                         <option value="medium">Medium</option>
                         <option value="hard">Hard</option>
                     </select>
                 </div>
-                <button type="submit" class="btn">Start Game</button>
-            </form>
-        </div>
-
-        <!-- Game Screen -->
-        <div id="gameScreen" class="screen">
-            <div class="question-header">
-                <span class="question-number">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">10</span></span>
-                <span class="score">Score: <span id="currentScore">0</span></span>
-            </div>
-            
-            <div class="question-meta">
-                <span class="category-badge" id="categoryBadge">Category</span>
-                <span class="difficulty-badge" id="difficultyBadge">Difficulty</span>
-            </div>
-            
-            <div class="global-stats" id="globalStats">
-                <div>Global Statistics</div>
-                <div class="stats-row">
-                    <div class="stat">
-                        <div class="stat-value" id="timesAnswered">0</div>
-                        <div class="stat-label">Times Answered</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value" id="globalAccuracy">0%</div>
-                        <div class="stat-label">Global Accuracy</div>
-                    </div>
+                <div class="filter-group">
+                    <label for="leaderboardLimit">Show Top</label>
+                    <select id="leaderboardLimit" class="form-select" onchange="loadLeaderboard()">
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select>
                 </div>
             </div>
             
-            <div class="question-text" id="questionText"></div>
-            
-            <div class="options" id="optionsContainer"></div>
-            
-            <div id="feedbackContainer"></div>
-            
-            <button id="nextButton" class="btn next-btn" onclick="nextQuestion()" style="display: none;">Next Question</button>
-        </div>
-
-        <!-- Results Screen -->
-        <div id="resultsScreen" class="screen">
-            <div class="results-summary">
-                <h2>Game Complete! 🎉</h2>
-                <div class="final-score" id="finalScore">0/0</div>
-                <div class="percentage" id="finalPercentage">0%</div>
-            </div>
-            
-            <div id="answersReview"></div>
-            
-            <!-- Question Generator Section -->
-            <div class="question-generator">
-                <h3>🤖 Generate a New Question</h3>
-                <p>Help expand our database! Enter a category and we'll generate a new question using AI.</p>
-                <div class="generator-form">
-                    <div class="form-group">
-                        <input type="text" id="newCategory" class="category-input" placeholder="e.g., Science, History, Sports, Geography">
-                        <button onclick="generateQuestion()" id="generateBtn" class="btn generate-btn">
-                            <span id="generateBtnText">Generate Question</span>
-                            <div id="generateLoading" class="loading" style="display: none;"></div>
-                        </button>
-                    </div>
-                    <div id="generatorFeedback"></div>
+            <div id="leaderboardContent">
+                <div class="empty-state">
+                    <h3>Loading Leaderboard...</h3>
+                    <p>Please wait while we fetch the latest scores.</p>
                 </div>
             </div>
-            
-            <button class="btn" onclick="resetGame()">Play Again</button>
         </div>
     </div>
 
@@ -604,6 +836,8 @@
             selectedAnswer: null,
             answered: false
         };
+        
+        let currentTab = 'game';
 
         // Initialize slider functionality and load categories
         document.addEventListener('DOMContentLoaded', function() {
@@ -616,7 +850,32 @@
             
             // Load available categories on page load
             loadAvailableCategories();
+            
+            // Load leaderboard categories
+            loadLeaderboardCategories();
         });
+
+        function showTab(tabName) {
+            currentTab = tabName;
+            
+            // Update tab buttons
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Show/hide tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            if (tabName === 'game') {
+                document.getElementById('gameTab').style.display = 'block';
+            } else if (tabName === 'leaderboard') {
+                document.getElementById('leaderboardTab').style.display = 'block';
+                loadLeaderboard();
+            }
+        }
 
         async function loadAvailableCategories() {
             try {
@@ -624,11 +883,13 @@
                 const data = await response.json();
                 if (response.ok && data.categories) {
                     updateCategoryDropdown(data.categories);
+                    updateLeaderboardCategoryDropdown(data.categories);
                 }
             } catch (error) {
                 console.error('Failed to load categories:', error);
                 // Fallback to default categories
                 updateCategoryDropdown(['stem', 'history']);
+                updateLeaderboardCategoryDropdown(['stem', 'history']);
             }
         }
 
@@ -664,6 +925,42 @@
             }
         }
 
+        function updateLeaderboardCategoryDropdown(categories) {
+            const categorySelect = document.getElementById('leaderboardCategory');
+            const currentValue = categorySelect.value;
+            
+            // Clear existing options except "All Categories"
+            categorySelect.innerHTML = '<option value="all">All Categories</option>';
+            
+            // Add available categories with proper capitalization
+            const categoryDisplayNames = {
+                'stem': 'STEM',
+                'history': 'History',
+                'arts': 'Arts',
+                'sports': 'Sports',
+                'geography': 'Geography',
+                'general': 'General'
+            };
+            
+            categories.sort().forEach(category => {
+                if (category && category !== 'all') {
+                    const option = document.createElement('option');
+                    option.value = category;
+                    option.textContent = categoryDisplayNames[category] || category.charAt(0).toUpperCase() + category.slice(1);
+                    categorySelect.appendChild(option);
+                }
+            });
+            
+            // Restore previous selection if it still exists
+            if (currentValue && [...categorySelect.options].some(opt => opt.value === currentValue)) {
+                categorySelect.value = currentValue;
+            }
+        }
+
+        function loadLeaderboardCategories() {
+            loadAvailableCategories();
+        }
+
         function showScreen(screenId) {
             document.querySelectorAll('.screen').forEach(screen => {
                 screen.classList.remove('active');
@@ -690,6 +987,7 @@
                     // Update categories dropdown if new categories are available
                     if (data.categories) {
                         updateCategoryDropdown(data.categories);
+                        updateLeaderboardCategoryDropdown(data.categories);
                     }
                     showScreen('gameScreen');
                     loadQuestion();
@@ -820,6 +1118,13 @@
                 document.getElementById('finalScore').textContent = `${data.score}/${data.totalQuestions}`;
                 document.getElementById('finalPercentage').textContent = `${data.percentage}% Correct`;
                 
+                // Reset score submission form
+                document.getElementById('playerName').value = '';
+                document.getElementById('submitScoreBtn').disabled = false;
+                document.getElementById('submitScoreText').textContent = 'Submit Score';
+                document.getElementById('scoreSubmissionFeedback').innerHTML = '';
+                document.getElementById('achievementsSection').style.display = 'none';
+                
                 // Show answer review
                 const reviewContainer = document.getElementById('answersReview');
                 reviewContainer.innerHTML = '<h3>Answer Review</h3>';
@@ -840,6 +1145,252 @@
             } catch (error) {
                 alert('Error loading results. Please try again.');
             }
+        }
+
+        async function submitScore() {
+            const playerNameInput = document.getElementById('playerName');
+            const submitBtn = document.getElementById('submitScoreBtn');
+            const submitText = document.getElementById('submitScoreText');
+            const submitLoading = document.getElementById('submitScoreLoading');
+            const feedback = document.getElementById('scoreSubmissionFeedback');
+            
+            const playerName = playerNameInput.value.trim();
+            
+            if (!playerName) {
+                showScoreSubmissionFeedback('Please enter your name to submit your score.', 'error');
+                return;
+            }
+            
+            // Show loading state
+            submitBtn.disabled = true;
+            submitText.style.display = 'none';
+            submitLoading.style.display = 'inline-block';
+            showScoreSubmissionFeedback('🚀 Submitting your score...', 'info');
+            
+            try {
+                const response = await fetch('/api/submit-score', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ playerName: playerName })
+                });
+                
+                const data = await response.json();
+                
+                if (response.ok) {
+                    showScoreSubmissionFeedback(`✅ ${data.message}`, 'success');
+                    playerNameInput.value = '';
+                    
+                    // Show achievements if any were earned
+                    if (data.achievements && data.achievements.length > 0) {
+                        showAchievements(data.achievements);
+                    }
+                    
+                    // Disable the form to prevent duplicate submissions
+                    submitBtn.disabled = true;
+                    submitText.textContent = 'Score Submitted';
+                    
+                    // Reload leaderboard if it's visible
+                    if (currentTab === 'leaderboard') {
+                        loadLeaderboard();
+                    }
+                    
+                } else {
+                    showScoreSubmissionFeedback(`❌ ${data.error || 'Failed to submit score. Please try again.'}`, 'error');
+                }
+            } catch (error) {
+                showScoreSubmissionFeedback('❌ Network error. Please check your connection and try again.', 'error');
+            } finally {
+                // Reset loading state only if button isn't permanently disabled
+                if (!submitBtn.disabled || submitText.textContent !== 'Score Submitted') {
+                    submitText.style.display = 'inline';
+                    submitLoading.style.display = 'none';
+                    submitBtn.disabled = false;
+                } else {
+                    submitLoading.style.display = 'none';
+                    submitText.style.display = 'inline';
+                }
+            }
+        }
+
+        function showScoreSubmissionFeedback(message, type) {
+            const feedback = document.getElementById('scoreSubmissionFeedback');
+            feedback.textContent = message;
+            feedback.className = type;
+            feedback.style.display = 'block';
+            feedback.style.padding = '15px';
+            feedback.style.borderRadius = '10px';
+            feedback.style.marginTop = '15px';
+            feedback.style.fontWeight = '600';
+            
+            if (type === 'success') {
+                feedback.style.background = '#e8f5e9';
+                feedback.style.color = '#2e7d32';
+                feedback.style.border = '2px solid #4caf50';
+            } else if (type === 'error') {
+                feedback.style.background = '#ffebee';
+                feedback.style.color = '#c62828';
+                feedback.style.border = '2px solid #f44336';
+            } else if (type === 'info') {
+                feedback.style.background = '#e3f2fd';
+                feedback.style.color = '#1976d2';
+                feedback.style.border = '2px solid #2196f3';
+            }
+        }
+
+        function showAchievements(achievements) {
+            const achievementsSection = document.getElementById('achievementsSection');
+            const achievementsList = document.getElementById('achievementsList');
+            
+            achievementsList.innerHTML = '';
+            
+            achievements.forEach(achievement => {
+                const achievementDiv = document.createElement('div');
+                achievementDiv.className = 'achievement';
+                achievementDiv.innerHTML = `
+                    <div class="achievement-icon">🏆</div>
+                    <div class="achievement-content">
+                        <h4>${achievement.name}</h4>
+                        <p>${achievement.description}</p>
+                    </div>
+                `;
+                achievementsList.appendChild(achievementDiv);
+            });
+            
+            achievementsSection.style.display = 'block';
+        }
+
+        async function loadLeaderboard() {
+            const category = document.getElementById('leaderboardCategory').value;
+            const difficulty = document.getElementById('leaderboardDifficulty').value;
+            const limit = document.getElementById('leaderboardLimit').value;
+            
+            const leaderboardContent = document.getElementById('leaderboardContent');
+            leaderboardContent.innerHTML = `
+                <div class="empty-state">
+                    <h3>Loading Leaderboard...</h3>
+                    <p>Please wait while we fetch the latest scores.</p>
+                </div>
+            `;
+            
+            try {
+                const params = new URLSearchParams({
+                    category: category,
+                    difficulty: difficulty,
+                    limit: limit
+                });
+                
+                const response = await fetch(`/api/leaderboard?${params}`);
+                const data = await response.json();
+                
+                if (response.ok && data.leaderboard) {
+                    displayLeaderboard(data.leaderboard, data.filters);
+                } else {
+                    leaderboardContent.innerHTML = `
+                        <div class="empty-state">
+                            <h3>Error Loading Leaderboard</h3>
+                            <p>${data.error || 'Failed to load leaderboard data.'}</p>
+                        </div>
+                    `;
+                }
+            } catch (error) {
+                leaderboardContent.innerHTML = `
+                    <div class="empty-state">
+                        <h3>Connection Error</h3>
+                        <p>Unable to connect to the server. Please try again later.</p>
+                    </div>
+                `;
+            }
+        }
+
+        function displayLeaderboard(leaderboard, filters) {
+            const leaderboardContent = document.getElementById('leaderboardContent');
+            
+            if (leaderboard.length === 0) {
+                leaderboardContent.innerHTML = `
+                    <div class="empty-state">
+                        <h3>No Scores Yet</h3>
+                        <p>Be the first to submit a score for these filters!</p>
+                        <button class="btn" onclick="showTab('game')">Play Game</button>
+                    </div>
+                `;
+                return;
+            }
+            
+            let tableHTML = `
+                <table class="leaderboard-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player</th>
+                            <th>Score</th>
+                            <th>Percentage</th>
+                            <th>Category</th>
+                            <th>Difficulty</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            leaderboard.forEach(entry => {
+                const date = new Date(entry.timestamp).toLocaleDateString();
+                const rankClass = entry.rank <= 3 ? `rank-${entry.rank}` : '';
+                const categoryDisplay = getCategoryDisplayName(entry.category);
+                const difficultyDisplay = entry.difficulty.charAt(0).toUpperCase() + entry.difficulty.slice(1);
+                
+                tableHTML += `
+                    <tr>
+                        <td class="rank-cell ${rankClass}">#${entry.rank}</td>
+                        <td><strong>${escapeHtml(entry.playerName)}</strong></td>
+                        <td class="score-cell">${entry.score}/${entry.totalQuestions}</td>
+                        <td class="percentage-cell">${entry.percentage}%</td>
+                        <td>${categoryDisplay}</td>
+                        <td>${difficultyDisplay}</td>
+                        <td>${date}</td>
+                    </tr>
+                `;
+            });
+            
+            tableHTML += `
+                    </tbody>
+                </table>
+            `;
+            
+            // Add filter summary
+            const filterSummary = createFilterSummary(filters);
+            
+            leaderboardContent.innerHTML = filterSummary + tableHTML;
+        }
+
+        function getCategoryDisplayName(category) {
+            const categoryDisplayNames = {
+                'stem': 'STEM',
+                'history': 'History',
+                'arts': 'Arts',
+                'sports': 'Sports',
+                'geography': 'Geography',
+                'general': 'General',
+                'all': 'All Categories'
+            };
+            return categoryDisplayNames[category] || category.charAt(0).toUpperCase() + category.slice(1);
+        }
+
+        function createFilterSummary(filters) {
+            const categoryName = getCategoryDisplayName(filters.category);
+            const difficultyName = filters.difficulty === 'all' ? 'All Difficulties' : 
+                                   filters.difficulty.charAt(0).toUpperCase() + filters.difficulty.slice(1);
+            
+            return `
+                <div style="background: #f0f4ff; padding: 15px; border-radius: 10px; margin-bottom: 20px; text-align: center;">
+                    <strong>Showing Top ${filters.limit} • ${categoryName} • ${difficultyName}</strong>
+                </div>
+            `;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
         }
 
         async function resetGame() {
